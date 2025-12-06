@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 				"StepDefinitions", "hooks"}, plugin = {"pretty",
 						"html:target/cucumber-report.html",
 						"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, tags = "not @QQueueExcelDPDD and not @SiginDPDataDriven")
+						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, tags = "not @QQueueExcelDPDD and not @SiginDPDataDriven and not @SiginExcel-ScenarioDataDriven")
 
 // src/test/resources/features/Graph.feature",
 // "src/test/resources/features/Queue.feature"
