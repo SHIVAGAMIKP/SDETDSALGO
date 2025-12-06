@@ -14,12 +14,14 @@ Feature: Sign-In
   Scenario: Verify register! link below username and password field of Sign-In Page.
     When User clicks on "register!" link in Sign-In Page.
     Then User should be redirected to register Page.
-
-
-  @SiginDPDataDriven
+    
+    
+    
+#To execute this scenario uae SignInDataDriven Runner
+@SiginDPDataDriven
   Scenario: Verify Login with valid and invalid credentials from Excel.
     When User enters username,password and clicks on Login.
-    Then Expected message in excel should be displayed.
+    Then Verfiy expected message is displayed.
     
 @SiginExcel-ScenarioDataDriven
   Scenario Outline: Verify Login with valid and invalid credentials from Excel through Scenario Outline.

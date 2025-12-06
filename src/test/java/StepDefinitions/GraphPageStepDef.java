@@ -25,7 +25,6 @@ public class GraphPageStepDef {
 		lp.clickGetStarted();
 		signIn.clickOnSignIn();
 		signIn.Login("Test-229", "Shivagami229.");
-		// gr.goToGraphPAge();
 		Assert.assertEquals(gr.goToGraphPAge(), "Graph");
 	}
 
@@ -33,7 +32,6 @@ public class GraphPageStepDef {
 	public void verify_the_count_and_names_of_the_links_on_graph_page(
 			DataTable dataTable) {
 		List<String> linknameslist = dataTable.asList();
-
 		Assert.assertTrue(gr.GetgraphLinkCount(linknameslist));
 
 	}
@@ -59,19 +57,5 @@ public class GraphPageStepDef {
 	public void user_clicks_on_try_here_link_on(String grPageLinks) {
 		Assert.assertTrue(gr.TryHere(grPageLinks));
 	}
-
-	////
-	// @When("User clicks on run button to execute the sample {string} entered
-	//// in Editor Space.")
-	// public void
-	//// user_clicks_on_run_button_to_execute_the_sample_entered_in_editor_space(String
-	//// code) {
-	// if (Savedata.getexecutionType() != null &&
-	//// Savedata.getexecutionType().equalsIgnoreCase("DD")) {
-	// //pythonTestCode = Savedata.getData();
-	// //code = pythonTestCode.get("Code");
-	// }
-	// //gr.EnterCode(code);
-	// }
 
 }

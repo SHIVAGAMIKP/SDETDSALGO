@@ -19,10 +19,6 @@ import io.cucumber.java.en.When;
 
 public class QueueStepDef {
 
-	// private String code, output , QueuePageLinks;
-	// private Map<String, String> Queuedata;
-	// private String code;
-	// private String QueuePageLinks;
 	private String output;
 
 	Queue queue = new Queue();
@@ -77,11 +73,6 @@ public class QueueStepDef {
 
 	}
 
-	// @When("User clicks on TryHere link on {string}")
-	// public void user_clicks_on_try_here_link_on(String QueuePageLinks) {
-	// Assert.assertTrue(queue.TryHere(QueuePageLinks));
-	// }
-
 	@When("User clicks on TryHere link on  {string} and clicks on run button to execute the {string} entered in Editor space.")
 	public void user_clicks_on_try_here_link_on_and_clicks_on_run_button_to_execute_the_entered_in_editor_space(
 			String QueuePageLinks, String code) throws InterruptedException {
@@ -89,7 +80,6 @@ public class QueueStepDef {
 		Assert.assertTrue(queue.TryHere(QueuePageLinks));
 		if (Savedata.getexecutionType() != null
 				&& Savedata.getexecutionType().equalsIgnoreCase("DD")) {
-			// queue.EnterCode(Savedata.getData().get("Code"));
 			code = Savedata.getData().get("Code");
 		}
 
@@ -101,64 +91,11 @@ public class QueueStepDef {
 			String output) {
 		if (Savedata.getexecutionType() != null
 				&& Savedata.getexecutionType().equalsIgnoreCase("DD")) {
-
-			// queue.getOutput(Savedata.getData().get("output"));
 			output = Savedata.getData().get("Output");
 		}
 
 		Assert.assertTrue(queue.getOutput(output));
 	}
-
-	// @And("User clicks on run button to execute the {string} entered in Editor
-	// space.")
-	// public void
-	// user_clicks_on_run_button_to_execute_the_sample_entered_in_editor_space(
-	// String code) throws InterruptedException, IOException {
-	// /*
-	// * This if statement will execute when its data driven through excel
-	// * only with code and output not end to end. Links will be selected from
-	// * scenario outline but the code and output data will be from excel
-	// */
-	//
-	// System.out.println("code is" + code);
-	// if (Savedata.getexecutionType() != null
-	// && Savedata.getexecutionType().equalsIgnoreCase("DD")) {
-	// // Queuedata = Savedata.getData();
-	// // code = Queuedata.get("Code");
-	// queue.EnterCode(Savedata.getData().get("Code"));
-	//
-	// }
-	// /*
-	// * The below else if block is for data driven execution through scenario
-	// * name in excel data sheet
-	// */
-	// else if ("<Code>".equalsIgnoreCase(code.trim())) {
-	// System.out.println(scenario);
-	//
-	// /* Get Data from excel */
-	// List<Map<String, String>> Queuecode = ExcelUtil
-	// .getTestData("Queue-SODD");
-	// System.out.println(Queuecode.get(0));
-	// Map<String, String> getRow = Queuecode.stream()
-	// .filter(row -> scenario.contains(row.get("ScenarioName")))
-	// .findFirst().orElse(null);
-	//
-	// if (getRow != null) {
-	//
-	// code = getRow.get("Code").trim();
-	// System.out.println(code);
-	// output = getRow.get("Output").trim();
-	// System.out.println(output);
-	// queue.EnterCode(code);
-	// } else {
-	// System.out.println("mismatch");
-	// }
-	//
-	// } else {
-	// queue.EnterCode(code);
-	// }
-	//
-	// }
 
 	@When("User clicks on TryHere link on {string} and executes the code by clicking on run button.")
 	public void user_clicks_on_try_here_link_on_and_executes_the_code_by_clicking_on_run_button(
@@ -197,10 +134,6 @@ public class QueueStepDef {
 	 */
 	@Given("User is in Queue Page Links.")
 	public void user_is_in_queue_page_links() {
-		// Queuedata = Savedata.getData();
-		// QueuePageLinks = Queuedata.get("QueuePageLinks").trim();
-		// queue.clickonQLinks(QueuePageLinks);
-		// Assert.assertTrue(queue.verifyQlinkPage(QueuePageLinks));
 
 		queue.clickonQLinks(Savedata.getData().get("QueuePageLinks"));
 		Assert.assertTrue(queue
@@ -210,7 +143,6 @@ public class QueueStepDef {
 
 	@When("User clicks on TryHere link on  QueuePage Links")
 	public void user_clicks_on_try_here_link_on_queue_page_links() {
-		// QueuePageLinks = Queuedata.get("QueuePageLinks").trim();
 		Assert.assertTrue(
 				queue.TryHere(Savedata.getData().get("QueuePageLinks")));
 	}
@@ -218,13 +150,11 @@ public class QueueStepDef {
 	@When("User clicks on run button to execute the sample code entered in Queue Editor.")
 	public void user_clicks_on_run_button_to_execute_the_sample_code_entered_in_queue_editor()
 			throws InterruptedException {
-		// code = Queuedata.get("Code").trim();
 		queue.EnterCode(Savedata.getData().get("Code"));
 	}
 
 	@Then("Output for the executed code should be displayed.")
 	public void output_for_the_executed_code_should_be_displayed() {
-		// output = Queuedata.get("Output").trim();
 		Assert.assertTrue(queue.getOutput(Savedata.getData().get("Output")));
 	}
 

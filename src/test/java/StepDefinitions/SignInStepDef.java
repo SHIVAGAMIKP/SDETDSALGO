@@ -73,12 +73,6 @@ public class SignInStepDef {
 
 	@When("User enters Login Credentials.")
 	public void user_enters_and_clicks_on_login() {
-		// List<List<String>> logincredentials = loginDataTable.asLists();
-		// if (!logincredentials.isEmpty()) {
-		// signIn.Login(logincredentials.get(0).get(0),
-		// logincredentials.get(0).get(1));
-		// }
-
 		signIn.Login("Test-229", "Shivagami229.");
 	}
 
@@ -91,12 +85,10 @@ public class SignInStepDef {
 
 	}
 
-	@Then("Expected message in excel should be displayed.")
-	public void Expected_message_in_excel_should_be_displayed()
-			throws IOException {
+	@Then("Verfiy expected message is displayed.")
+	public void Verfiy_expected_message_is_displayed() throws IOException {
 		Map<String, String> Logindata = Savedata.getData();
 		String actualMessage = signIn.verifySuccesfulLogin();
-		// Screenshot.fullPageScreenshot("SignIn");
 		Assert.assertEquals(actualMessage,
 				Logindata.get("Expected Result").trim());
 	}

@@ -1,6 +1,5 @@
 package Utils;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,14 +12,16 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtil {
 
-	private static String filepath = "C:/Users/Shiva/MAvenProjects/NumpyNinja/SDET229-DSAlgo/src/test/resources/TestData/DSAlgo.xlsx";
+	private static String filepath = "src/test/resources/TestData/DSAlgo.xlsx";
+
+	// C:/Users/Shiva/MAvenProjects/NumpyNinja/SDET229-DSAlgo/
 
 	private static XSSFWorkbook workbook;
 	private static XSSFSheet sheet;
 
 	public synchronized Object[][] getData(String testsheet) throws Exception {
-		FileInputStream filelocation = new FileInputStream(filepath);
-		workbook = new XSSFWorkbook(filelocation);
+		// FileInputStream filelocation = new FileInputStream(filepath);
+		workbook = new XSSFWorkbook(filepath);
 		// sheet = workbook.getSheet("Queue");
 		sheet = workbook.getSheet(testsheet);
 

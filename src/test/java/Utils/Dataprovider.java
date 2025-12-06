@@ -14,8 +14,8 @@ public class Dataprovider {
 
 	private static XSSFWorkbook workbook;
 	private static XSSFSheet sheet;
-	private static String filepath = "C:/Users/Shiva/MAvenProjects/NumpyNinja/SDET229-DSAlgo/src/test/resources/TestData/DSAlgo.xlsx";
-	// "src/test/resources/TestData/DS-Algo.xlsx";
+	private static String filepath = "src/test/resources/TestData/DSAlgo.xlsx";
+	// "C:/Users/Shiva/MAvenProjects/NumpyNinja/SDET229-DSAlgo/src/test/resources/TestData/DSAlgo.xlsx";
 
 	public synchronized Object[][] getData() throws Exception {
 		FileInputStream filelocation = new FileInputStream(filepath);

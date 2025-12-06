@@ -14,10 +14,8 @@ import io.cucumber.testng.CucumberOptions;
 				"StepDefinitions", "hooks"}, plugin = {"pretty",
 						"html:target/cucumber-report.html",
 						"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, tags = "@QScenarioOutlineDD or @GraphScenarioOutlineDD")
-// "not @SiginDPExcel-DPDataDrive and not @QQueueExcelDPDD "
-// + "and not @SiginDPDataDriven and not @Queue50:50DD and not @Graph50:50DD")
-// tags = "not @SiginDPExcel-DPDataDrive and not @QQueueExcelDPDD"
+						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, tags = "not @QQueueExcelDPDD and not @SiginDPDataDriven")
+
 public class TestRunner extends AbstractTestNGCucumberTests {
 
 	@BeforeClass(alwaysRun = true)

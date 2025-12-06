@@ -1,136 +1,1047 @@
-2025-12-04 18:14:21[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:14:24[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:14:24[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:14:24[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:14:25[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:14:25[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:14:28[main] INFO Pages.Queue Click on Graph 
-2025-12-04 18:14:28[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:14:28[main] INFO Pages.Queue Click on try here :Graph 
-2025-12-04 18:14:30[main] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
-2025-12-04 18:14:31[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:14:31[main] INFO Pages.Queue Validate code  output 
-2025-12-04 18:14:32[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:14:34[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:14:34[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:14:34[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:14:35[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:14:35[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:14:37[main] INFO Pages.Queue Click on Graph Representations 
-2025-12-04 18:14:37[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:14:38[main] INFO Pages.Queue Click on try here :Graph Representations 
-2025-12-04 18:14:38[main] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
-2025-12-04 18:14:39[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:14:39[main] INFO Pages.Queue Validate code  output 
-2025-12-04 18:14:40[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:14:41[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:14:41[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:14:42[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:14:43[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:14:43[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:14:45[main] INFO Pages.Queue Click on Graph 
-2025-12-04 18:14:45[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:14:45[main] INFO Pages.Queue Click on try here :Graph 
-2025-12-04 18:14:46[main] INFO Pages.Queue Enter code:sgh 
-2025-12-04 18:14:47[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:14:47[main] INFO Pages.Queue Validate code  output 
-2025-12-04 18:14:47[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:14:49[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:14:49[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:14:49[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:14:50[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:14:50[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:14:52[main] INFO Pages.Queue Click on Graph Representations 
-2025-12-04 18:14:53[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:14:53[main] INFO Pages.Queue Click on try here :Graph Representations 
-2025-12-04 18:14:54[main] INFO Pages.Queue Enter code:sgh 
-2025-12-04 18:14:54[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:14:54[main] INFO Pages.Queue Validate code  output 
-2025-12-04 18:14:55[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:14:57[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:14:57[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:14:58[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:14:58[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:14:59[main] INFO Pages.Queue Click on Implementation of Queue in Python 
-2025-12-04 18:15:00[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:15:00[main] INFO Pages.Queue Click on try here :Implementation of Queue in Python 
-2025-12-04 18:15:01[main] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
-2025-12-04 18:15:02[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:15:02[main] INFO Pages.Queue Validate code  output 
-2025-12-04 18:15:03[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:15:04[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:15:05[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:15:05[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:15:06[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:15:07[main] INFO Pages.Queue Click on Implementation using collections.deque 
-2025-12-04 18:15:08[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:15:08[main] INFO Pages.Queue Click on try here :Implementation using collections.deque 
-2025-12-04 18:15:09[main] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
-2025-12-04 18:15:10[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:15:10[main] INFO Pages.Queue Validate code  output 
-2025-12-04 18:15:10[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:15:12[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:15:12[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:15:13[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:15:13[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:15:15[main] INFO Pages.Queue Click on Implementation using array 
-2025-12-04 18:15:15[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:15:15[main] INFO Pages.Queue Click on try here :Implementation using array 
-2025-12-04 18:15:16[main] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
-2025-12-04 18:15:17[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:15:17[main] INFO Pages.Queue Validate code  output 
-2025-12-04 18:15:18[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:15:20[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:15:20[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:15:21[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:15:21[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:15:22[main] INFO Pages.Queue Click on Queue Operations 
-2025-12-04 18:15:23[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:15:23[main] INFO Pages.Queue Click on try here :Queue Operations 
-2025-12-04 18:15:24[main] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
-2025-12-04 18:15:25[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:15:25[main] INFO Pages.Queue Validate code  output 
-2025-12-04 18:15:25[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:15:27[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:15:27[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:15:28[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:15:28[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:15:30[main] INFO Pages.Queue Click on Implementation of Queue in Python 
-2025-12-04 18:15:30[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:15:30[main] INFO Pages.Queue Click on try here :Implementation of Queue in Python 
-2025-12-04 18:15:31[main] INFO Pages.Queue Enter code:abc 
-2025-12-04 18:15:32[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:15:32[main] INFO Pages.Queue Validate code  output 
-2025-12-04 18:15:32[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:15:34[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:15:35[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:15:35[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:15:36[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:15:37[main] INFO Pages.Queue Click on Implementation using collections.deque 
-2025-12-04 18:15:37[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:15:37[main] INFO Pages.Queue Click on try here :Implementation using collections.deque 
-2025-12-04 18:15:38[main] INFO Pages.Queue Enter code:abc 
-2025-12-04 18:15:39[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:15:39[main] INFO Pages.Queue Validate code  output 
-2025-12-04 18:15:39[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:15:41[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:15:41[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:15:42[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:15:42[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:15:44[main] INFO Pages.Queue Click on Implementation using array 
-2025-12-04 18:15:44[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:15:44[main] INFO Pages.Queue Click on try here :Implementation using array 
-2025-12-04 18:15:45[main] INFO Pages.Queue Enter code:abc 
-2025-12-04 18:15:46[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:15:46[main] INFO Pages.Queue Validate code  output 
-2025-12-04 18:15:46[main] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
-2025-12-04 18:15:48[main] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
-2025-12-04 18:15:48[main] INFO Pages.LaunchPage clicking on GetStarted button now 
-2025-12-04 18:15:49[main] INFO Pages.SignInPage Click On SignIn Link 
-2025-12-04 18:15:49[main] INFO Pages.SignInPage Login for user: Test-229 
-2025-12-04 18:15:51[main] INFO Pages.Queue Click on Queue Operations 
-2025-12-04 18:15:51[main] INFO Pages.Queue Verify title of Queue Page Links 
-2025-12-04 18:15:51[main] INFO Pages.Queue Click on try here :Queue Operations 
-2025-12-04 18:15:52[main] INFO Pages.Queue Enter code:abc 
-2025-12-04 18:15:53[main] INFO Pages.Queue Click on Run to execute code 
-2025-12-04 18:15:53[main] INFO Pages.Queue Validate code  output 
+2025-12-05 22:01:27[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:01:27[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:01:27[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:01:40[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:01:40[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:01:41[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:01:43[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:01:43[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:01:44[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:01:45[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:01:46[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:01:47[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:01:48[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:01:49[TestNG-tests-1] INFO Pages.Graph Verifying count and names of links on Graph page 
+2025-12-05 22:01:49[TestNG-tests-1] INFO Pages.Graph Verifying names of links on Graph pagetrue 
+2025-12-05 22:01:52[TestNG-tests-2] INFO Pages.Graph Verifying count and names of links on Graph page 
+2025-12-05 22:01:52[TestNG-tests-2] INFO Pages.Graph Verifying names of links on Graph pagetrue 
+2025-12-05 22:01:54[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:01:54[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:01:54[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:01:55[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:01:56[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:01:56[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:01:57[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:01:58[TestNG-tests-3] INFO Pages.Graph Verifying count and names of links on Graph page 
+2025-12-05 22:01:58[TestNG-tests-3] INFO Pages.Graph Verifying names of links on Graph pagetrue 
+2025-12-05 22:02:02[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:02[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:04[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:02:06[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:02:06[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:06[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:07[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:02:07[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:02:08[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:02:09[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:02:09[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:02:09[TestNG-tests-1] INFO Pages.Graph Click on links in Graph Page 
+2025-12-05 22:02:09[TestNG-tests-1] INFO Pages.Graph Verify page title of links on Graph Page 
+2025-12-05 22:02:11[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:02:11[TestNG-tests-2] INFO Pages.Graph Click on links in Graph Page 
+2025-12-05 22:02:12[TestNG-tests-2] INFO Pages.Graph Verify page title of links on Graph Page 
+2025-12-05 22:02:15[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:15[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:16[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:02:17[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:02:17[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:02:18[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:02:22[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:22[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:23[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:23[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:23[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:02:23[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:02:25[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:02:26[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:02:26[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:02:27[TestNG-tests-1] INFO Pages.Graph Click on links in Graph Page 
+2025-12-05 22:02:27[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:02:28[TestNG-tests-3] INFO Pages.Graph Click on links in Graph Page 
+2025-12-05 22:02:28[TestNG-tests-3] INFO Pages.Graph Verify page title of links on Graph Page 
+2025-12-05 22:02:29[TestNG-tests-1] INFO Pages.Graph Verify page title of links on Graph Page 
+2025-12-05 22:02:29[TestNG-tests-2] INFO Pages.Graph Click on links in Graph Page 
+2025-12-05 22:02:30[TestNG-tests-2] INFO Pages.Graph Verify page title of links on Graph Page 
+2025-12-05 22:02:32[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:02:32[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:02:32[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:02:37[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:37[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:38[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:38[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:38[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:02:38[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:02:39[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:02:40[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:02:41[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:02:41[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:02:44[TestNG-tests-1] INFO Pages.Queue Click on Graph 
+2025-12-05 22:02:45[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:45[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:02:45[TestNG-tests-2] INFO Pages.Queue Click on Graph 
+2025-12-05 22:02:45[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:02:46[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:02:46[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:02:47[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:02:47[TestNG-tests-1] INFO Pages.Queue Click on try here :<QueuePageLinks> 
+2025-12-05 22:02:47[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:02:47[TestNG-tests-2] INFO Pages.Queue Click on try here :<QueuePageLinks> 
+2025-12-05 22:02:49[TestNG-tests-1] INFO Pages.Queue Enter code:print('Graph') 
+2025-12-05 22:02:50[TestNG-tests-3] INFO Pages.Graph Click on links in Graph Page 
+2025-12-05 22:02:50[TestNG-tests-2] INFO Pages.Queue Enter code:print('Graph') 
+2025-12-05 22:02:51[TestNG-tests-3] INFO Pages.Graph Verify page title of links on Graph Page 
+2025-12-05 22:02:52[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:02:52[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:02:52[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:02:52[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:02:54[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:02:55[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:02:56[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:03:00[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:00[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:02[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:03:03[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:03[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:04[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:03:05[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:03:05[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:03:06[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:03:06[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:03:09[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:09[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:09[TestNG-tests-1] INFO Pages.Queue Click on Graph Representations 
+2025-12-05 22:03:10[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:03:10[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:03:10[TestNG-tests-1] INFO Pages.Queue Click on try here :<QueuePageLinks> 
+2025-12-05 22:03:11[TestNG-tests-1] INFO Pages.Queue Enter code:print('Graph Representations') 
+2025-12-05 22:03:11[TestNG-tests-2] INFO Pages.Queue Click on Graph Representations 
+2025-12-05 22:03:11[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:03:12[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:03:12[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:03:13[TestNG-tests-2] INFO Pages.Queue Click on try here :<QueuePageLinks> 
+2025-12-05 22:03:13[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:03:13[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:03:14[TestNG-tests-2] INFO Pages.Queue Enter code:print('Graph Representations') 
+2025-12-05 22:03:14[TestNG-tests-3] INFO Pages.Queue Click on Graph 
+2025-12-05 22:03:15[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:03:15[TestNG-tests-3] INFO Pages.Queue Click on try here :<QueuePageLinks> 
+2025-12-05 22:03:15[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:03:15[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:03:16[TestNG-tests-3] INFO Pages.Queue Enter code:print('Graph') 
+2025-12-05 22:03:17[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:03:17[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:03:17[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:03:20[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:20[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:20[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:03:21[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:03:21[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:03:21[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:03:22[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:03:25[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:25[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:26[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:03:27[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:03:27[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:03:27[TestNG-tests-1] INFO Pages.Queue Click on Graph 
+2025-12-05 22:03:28[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:03:28[TestNG-tests-1] INFO Pages.Queue Click on try here :Graph 
+2025-12-05 22:03:30[TestNG-tests-2] INFO Pages.Queue Click on Graph 
+2025-12-05 22:03:30[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:03:30[TestNG-tests-2] INFO Pages.Queue Click on try here :Graph 
+2025-12-05 22:03:34[TestNG-tests-2] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:03:34[TestNG-tests-1] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:03:35[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:35[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:36[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:03:36[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:03:37[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:03:37[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:03:37[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:03:37[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:03:37[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:03:39[TestNG-tests-3] INFO Pages.Queue Click on Graph Representations 
+2025-12-05 22:03:39[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:03:39[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:03:39[TestNG-tests-3] INFO Pages.Queue Click on try here :<QueuePageLinks> 
+2025-12-05 22:03:39[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:03:41[TestNG-tests-3] INFO Pages.Queue Enter code:print('Graph Representations') 
+2025-12-05 22:03:43[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:03:43[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:03:45[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:45[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:45[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:45[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:03:45[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:03:46[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:03:46[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:03:47[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:03:47[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:03:48[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:03:49[TestNG-tests-1] INFO Pages.Queue Click on Graph Representations 
+2025-12-05 22:03:49[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:03:50[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:03:50[TestNG-tests-1] INFO Pages.Queue Click on try here :Graph Representations 
+2025-12-05 22:03:51[TestNG-tests-2] INFO Pages.Queue Click on Graph Representations 
+2025-12-05 22:03:51[TestNG-tests-1] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:03:52[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:03:52[TestNG-tests-2] INFO Pages.Queue Click on try here :Graph Representations 
+2025-12-05 22:03:53[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:03:53[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:03:53[TestNG-tests-2] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:03:55[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:03:55[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:03:56[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:03:56[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:04:01[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:01[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:01[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:01[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:02[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:04:03[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:03[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:03[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:04:04[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:04:04[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:04:05[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:04:05[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:04:05[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:04:06[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:04:07[TestNG-tests-3] INFO Pages.Queue Click on Graph 
+2025-12-05 22:04:07[TestNG-tests-2] INFO Pages.Queue Click on Graph 
+2025-12-05 22:04:07[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:04:08[TestNG-tests-3] INFO Pages.Queue Click on try here :Graph 
+2025-12-05 22:04:08[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:04:08[TestNG-tests-2] INFO Pages.Queue Click on try here :Graph 
+2025-12-05 22:04:08[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:04:10[TestNG-tests-2] INFO Pages.Queue Enter code:sgh 
+2025-12-05 22:04:10[TestNG-tests-3] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:04:11[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:04:11[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:04:11[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:04:11[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:04:12[TestNG-tests-1] INFO Pages.Queue Click on Graph 
+2025-12-05 22:04:12[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:04:12[TestNG-tests-1] INFO Pages.Queue Click on try here :Graph 
+2025-12-05 22:04:13[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:04:13[TestNG-tests-1] INFO Pages.Queue Enter code:sgh 
+2025-12-05 22:04:14[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:04:14[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:04:17[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:17[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:17[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:04:18[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:04:18[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:04:18[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:04:19[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:04:22[TestNG-tests-2] INFO Pages.Queue Click on Graph Representations 
+2025-12-05 22:04:22[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:22[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:23[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:04:24[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:04:24[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:04:24[TestNG-tests-2] INFO Pages.Queue Click on try here :Graph Representations 
+2025-12-05 22:04:25[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:04:26[TestNG-tests-2] INFO Pages.Queue Enter code:sgh 
+2025-12-05 22:04:27[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:27[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:28[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:04:29[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:04:30[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:04:31[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:04:31[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:04:31[TestNG-tests-3] INFO Pages.Queue Click on Graph Representations 
+2025-12-05 22:04:31[TestNG-tests-1] INFO Pages.Queue Click on Graph Representations 
+2025-12-05 22:04:32[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:04:32[TestNG-tests-3] INFO Pages.Queue Click on try here :Graph Representations 
+2025-12-05 22:04:32[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:04:32[TestNG-tests-1] INFO Pages.Queue Click on try here :Graph Representations 
+2025-12-05 22:04:34[TestNG-tests-1] INFO Pages.Queue Enter code:sgh 
+2025-12-05 22:04:34[TestNG-tests-3] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:04:34[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:04:34[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:04:35[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:04:35[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:04:35[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:04:35[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:04:41[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:41[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:42[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:04:42[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:04:42[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:04:43[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:04:43[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:04:43[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:04:44[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:04:45[TestNG-tests-1] INFO Pages.Queue Verifying count and names of links on Queue page 
+2025-12-05 22:04:45[TestNG-tests-1] INFO Pages.Queue Verifying Names of links on Queue page: true 
+2025-12-05 22:04:45[TestNG-tests-1] INFO Pages.Queue Verifying count and names of links on Queue page 
+2025-12-05 22:04:45[TestNG-tests-1] INFO Pages.Queue Verifying Names of links on Queue page: true 
+2025-12-05 22:04:46[TestNG-tests-2] INFO Pages.Queue Verifying count and names of links on Queue page 
+2025-12-05 22:04:46[TestNG-tests-2] INFO Pages.Queue Verifying Names of links on Queue page: true 
+2025-12-05 22:04:46[TestNG-tests-2] INFO Pages.Queue Verifying count and names of links on Queue page 
+2025-12-05 22:04:46[TestNG-tests-2] INFO Pages.Queue Verifying Names of links on Queue page: true 
+2025-12-05 22:04:48[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:04:48[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:04:52[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:53[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:04:54[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:54[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:04:55[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:04:56[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:04:56[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:56[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:04:57[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:04:58[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:04:58[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:04:59[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:04:59[TestNG-tests-2] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:04:59[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:05:00[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:05:01[TestNG-tests-3] INFO Pages.Queue Click on Graph 
+2025-12-05 22:05:02[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:05:02[TestNG-tests-3] INFO Pages.Queue Click on try here :Graph 
+2025-12-05 22:05:02[TestNG-tests-1] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:05:02[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:05:03[TestNG-tests-3] INFO Pages.Queue Enter code:sgh 
+2025-12-05 22:05:04[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:05:04[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:05:04[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:05:04[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:05:09[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:05:09[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:05:10[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:05:10[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:05:11[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:05:11[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:05:11[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:05:12[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:05:12[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:05:13[TestNG-tests-1] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:05:14[TestNG-tests-2] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:05:14[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:05:15[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:05:16[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:05:16[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:05:22[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:05:22[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:05:22[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:05:24[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:05:24[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:05:24[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:05:25[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:05:25[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:05:26[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:05:27[TestNG-tests-2] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:05:27[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:05:28[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:05:28[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:05:29[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:05:29[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:05:30[TestNG-tests-3] INFO Pages.Queue Click on Graph Representations 
+2025-12-05 22:05:31[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:05:31[TestNG-tests-3] INFO Pages.Queue Click on try here :Graph Representations 
+2025-12-05 22:05:31[TestNG-tests-1] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:05:32[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:05:32[TestNG-tests-3] INFO Pages.Queue Enter code:sgh 
+2025-12-05 22:05:33[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:05:33[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:05:34[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:05:35[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:05:39[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:05:40[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:05:40[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:05:41[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:05:41[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:05:42[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:05:42[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:05:42[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:05:43[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:05:44[TestNG-tests-1] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:05:45[TestNG-tests-2] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:05:45[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:05:45[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:05:47[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:05:47[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:05:52[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:05:53[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:05:53[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:05:53[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:05:54[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:05:55[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:05:56[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:05:56[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:05:57[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:05:58[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:05:59[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:05:59[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:06:01[TestNG-tests-1] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:06:01[TestNG-tests-3] INFO Pages.Queue Verifying count and names of links on Queue page 
+2025-12-05 22:06:01[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:06:01[TestNG-tests-3] INFO Pages.Queue Verifying Names of links on Queue page: true 
+2025-12-05 22:06:01[TestNG-tests-3] INFO Pages.Queue Verifying count and names of links on Queue page 
+2025-12-05 22:06:02[TestNG-tests-1] INFO Pages.Queue Click on try here :Implementation of Queue in Python 
+2025-12-05 22:06:02[TestNG-tests-3] INFO Pages.Queue Verifying Names of links on Queue page: true 
+2025-12-05 22:06:03[TestNG-tests-1] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:06:03[TestNG-tests-2] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:06:03[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:06:03[TestNG-tests-2] INFO Pages.Queue Click on try here :Implementation of Queue in Python 
+2025-12-05 22:06:04[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:06:04[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:06:05[TestNG-tests-2] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:06:06[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:06:06[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:06:07[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:06:07[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:06:07[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:06:12[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:06:12[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:06:13[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:06:13[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:06:14[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:06:15[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:06:15[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:06:16[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:06:19[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:06:19[TestNG-tests-2] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:06:20[TestNG-tests-1] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:06:20[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:06:21[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:06:21[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:06:22[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:06:23[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:06:23[TestNG-tests-1] INFO Pages.Queue Click on try here :Implementation using collections.deque 
+2025-12-05 22:06:23[TestNG-tests-2] INFO Pages.Queue Click on try here :Implementation using collections.deque 
+2025-12-05 22:06:23[TestNG-tests-3] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:06:24[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:06:24[TestNG-tests-1] INFO Pages.Queue Enter code:print('Implementation using collections.deque') 
+2025-12-05 22:06:25[TestNG-tests-2] INFO Pages.Queue Enter code:print('Implementation using collections.deque') 
+2025-12-05 22:06:27[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:06:27[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:06:27[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:06:27[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:06:28[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:06:28[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:06:28[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:06:33[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:06:33[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:06:34[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:06:34[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:06:35[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:06:36[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:06:36[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:06:37[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:06:39[TestNG-tests-2] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:06:41[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:06:41[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:06:42[TestNG-tests-1] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:06:42[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:06:43[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:06:43[TestNG-tests-2] INFO Pages.Queue Click on try here :Implementation using array 
+2025-12-05 22:06:43[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:06:44[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:06:44[TestNG-tests-1] INFO Pages.Queue Click on try here :Implementation using array 
+2025-12-05 22:06:44[TestNG-tests-2] INFO Pages.Queue Enter code:print('Implementation using array') 
+2025-12-05 22:06:45[TestNG-tests-1] INFO Pages.Queue Enter code:print('Implementation using array') 
+2025-12-05 22:06:45[TestNG-tests-3] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:06:46[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:06:46[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:06:46[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:06:46[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:06:47[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:06:49[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:06:49[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:06:52[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:06:52[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:06:52[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:06:53[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:06:54[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:06:57[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:06:57[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:06:59[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:06:59[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:07:01[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:07:01[TestNG-tests-2] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:07:02[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:07:02[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:07:03[TestNG-tests-1] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:07:03[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:07:04[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:07:04[TestNG-tests-1] INFO Pages.Queue Click on try here :Queue Operations 
+2025-12-05 22:07:04[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:07:05[TestNG-tests-1] INFO Pages.Queue Enter code:print('Queue Operations') 
+2025-12-05 22:07:05[TestNG-tests-2] INFO Pages.Queue Click on try here :Queue Operations 
+2025-12-05 22:07:05[TestNG-tests-3] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:07:06[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:07:07[TestNG-tests-2] INFO Pages.Queue Enter code:print('Queue Operations') 
+2025-12-05 22:07:07[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:07:07[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:07:07[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:07:07[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:07:10[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:07:10[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:07:11[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:07:13[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:07:14[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:07:16[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:07:17[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:07:18[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:07:19[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:07:19[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:07:20[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:07:21[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:07:22[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:07:23[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:07:23[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:07:25[TestNG-tests-1] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:07:25[TestNG-tests-3] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:07:26[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:07:26[TestNG-tests-1] INFO Pages.Queue Click on try here :Implementation of Queue in Python 
+2025-12-05 22:07:26[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:07:26[TestNG-tests-2] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:07:27[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:07:27[TestNG-tests-2] INFO Pages.Queue Click on try here :Implementation of Queue in Python 
+2025-12-05 22:07:28[TestNG-tests-1] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:07:29[TestNG-tests-2] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:07:30[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:07:30[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:07:30[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:07:30[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:07:31[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:07:31[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:07:31[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:07:36[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:07:36[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:07:37[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:07:37[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:07:38[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:07:39[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:07:39[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:07:40[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:07:43[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:07:43[TestNG-tests-2] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:07:43[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:07:45[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:07:45[TestNG-tests-1] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:07:45[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:07:46[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:07:46[TestNG-tests-2] INFO Pages.Queue Click on try here :Implementation using collections.deque 
+2025-12-05 22:07:46[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:07:46[TestNG-tests-1] INFO Pages.Queue Click on try here :Implementation using collections.deque 
+2025-12-05 22:07:47[TestNG-tests-3] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:07:47[TestNG-tests-2] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:07:48[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:07:48[TestNG-tests-3] INFO Pages.Queue Click on try here :Implementation of Queue in Python 
+2025-12-05 22:07:49[TestNG-tests-1] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:07:49[TestNG-tests-3] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:07:50[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:07:50[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:07:50[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:07:50[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:07:51[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:07:51[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:07:51[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:07:54[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:07:55[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:07:55[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:07:55[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:07:56[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:07:56[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:07:59[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:08:00[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:08:02[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:08:02[TestNG-tests-1] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:08:03[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:08:03[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:08:03[TestNG-tests-1] INFO Pages.Queue Click on try here :Implementation using array 
+2025-12-05 22:08:06[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:08:06[TestNG-tests-1] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:08:06[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:08:07[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:08:08[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:08:08[TestNG-tests-2] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:08:09[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:08:09[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:08:09[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:08:09[TestNG-tests-2] INFO Pages.Queue Click on try here :Implementation using array 
+2025-12-05 22:08:10[TestNG-tests-3] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:08:10[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:08:10[TestNG-tests-3] INFO Pages.Queue Click on try here :Implementation using collections.deque 
+2025-12-05 22:08:11[TestNG-tests-2] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:08:12[TestNG-tests-3] INFO Pages.Queue Enter code:print('Implementation using collections.deque') 
+2025-12-05 22:08:12[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:08:12[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:08:13[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:08:13[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:08:13[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:08:13[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:08:18[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:08:18[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:08:18[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:08:19[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:08:19[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:08:20[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:08:20[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:08:20[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:08:21[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:08:22[TestNG-tests-2] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:08:22[TestNG-tests-1] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:08:23[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:08:23[TestNG-tests-1] INFO Pages.Queue Click on try here :Queue Operations 
+2025-12-05 22:08:24[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:08:24[TestNG-tests-2] INFO Pages.Queue Click on try here :Queue Operations 
+2025-12-05 22:08:24[TestNG-tests-1] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:08:26[TestNG-tests-2] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:08:26[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:08:26[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:08:27[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:08:27[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:08:28[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:08:28[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:08:34[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:08:34[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:08:34[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:08:34[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:08:35[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:08:35[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:08:37[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:08:37[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:08:38[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:08:38[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:08:39[TestNG-tests-3] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:08:39[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:08:40[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:08:40[TestNG-tests-3] INFO Pages.Queue Click on try here :Implementation using array 
+2025-12-05 22:08:40[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:08:41[TestNG-tests-2] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:08:41[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:08:42[TestNG-tests-2] INFO Pages.Queue Click on try here :Implementation of Queue in Python 
+2025-12-05 22:08:42[TestNG-tests-3] INFO Pages.Queue Enter code:print('Implementation using array') 
+2025-12-05 22:08:43[TestNG-tests-2] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:08:43[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:08:43[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:08:43[TestNG-tests-1] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:08:44[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:08:44[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:08:44[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:08:44[TestNG-tests-1] INFO Pages.Queue Click on try here :Implementation of Queue in Python 
+2025-12-05 22:08:45[TestNG-tests-1] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:08:46[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:08:46[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:08:47[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:08:47[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:08:47[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:08:52[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:08:52[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:08:53[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:08:53[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:08:54[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:08:54[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:08:54[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:08:55[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:08:57[TestNG-tests-2] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:08:57[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:08:57[TestNG-tests-2] INFO Pages.Queue Click on try here :Implementation using collections.deque 
+2025-12-05 22:08:58[TestNG-tests-1] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:08:59[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:00[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:09:01[TestNG-tests-2] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:09:01[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:02[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:09:03[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:09:03[TestNG-tests-1] INFO Pages.Queue Click on try here :Implementation using collections.deque 
+2025-12-05 22:09:04[TestNG-tests-3] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:09:04[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:09:04[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:09:05[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:09:05[TestNG-tests-3] INFO Pages.Queue Click on try here :Queue Operations 
+2025-12-05 22:09:05[TestNG-tests-1] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:09:06[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:09:06[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:09:06[TestNG-tests-3] INFO Pages.Queue Enter code:print('Queue Operations') 
+2025-12-05 22:09:07[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:09:07[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:09:07[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:09:07[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:09:12[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:12[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:12[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:09:12[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:09:13[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:13[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:14[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:09:14[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:09:16[TestNG-tests-2] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:09:16[TestNG-tests-1] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:09:16[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:09:16[TestNG-tests-2] INFO Pages.Queue Click on try here :Implementation using array 
+2025-12-05 22:09:16[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:09:17[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:09:17[TestNG-tests-1] INFO Pages.Queue Click on try here :Implementation using array 
+2025-12-05 22:09:17[TestNG-tests-2] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:09:18[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:09:18[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:09:18[TestNG-tests-1] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:09:19[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:09:19[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:09:20[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:09:23[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:23[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:09:24[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:09:24[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:25[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:09:28[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:28[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:29[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:09:29[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:09:30[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:31[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:09:31[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:32[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:09:32[TestNG-tests-3] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:09:33[TestNG-tests-2] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:09:33[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:09:33[TestNG-tests-3] INFO Pages.Queue Click on try here :Implementation of Queue in Python 
+2025-12-05 22:09:34[TestNG-tests-2] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:09:34[TestNG-tests-2] INFO Pages.Queue Click on try here :Queue Operations 
+2025-12-05 22:09:34[TestNG-tests-1] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:09:35[TestNG-tests-1] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:09:35[TestNG-tests-1] INFO Pages.Queue Click on try here :Queue Operations 
+2025-12-05 22:09:35[TestNG-tests-2] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:09:36[TestNG-tests-3] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:09:37[TestNG-tests-1] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:09:37[TestNG-tests-2] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:09:37[TestNG-tests-2] INFO Pages.Queue Validate code  output 
+2025-12-05 22:09:37[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:09:37[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:09:37[TestNG-tests-1] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:09:37[TestNG-tests-1] INFO Pages.Queue Validate code  output 
+2025-12-05 22:09:38[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:09:39[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:09:40[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:09:41[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:41[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:42[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:09:42[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:45[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:45[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:45[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:46[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:09:47[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:47[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:47[TestNG-tests-1] INFO Pages.SignInPage Verify Sign-IN Page Title 
+2025-12-05 22:09:48[TestNG-tests-2] INFO Pages.SignInPage Verify Sign-IN Page Title 
+2025-12-05 22:09:49[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:09:49[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:09:55[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:55[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:55[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:55[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:09:56[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:56[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:09:57[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:09:57[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:57[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:09:57[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:09:59[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:59[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:09:59[TestNG-tests-3] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:09:59[TestNG-tests-1] INFO Pages.SignInPage Click on register 
+2025-12-05 22:10:00[TestNG-tests-1] INFO Pages.SignInPage Verify Sign-IN Page Title 
+2025-12-05 22:10:00[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:10:00[TestNG-tests-3] INFO Pages.Queue Click on try here :Implementation using collections.deque 
+2025-12-05 22:10:00[TestNG-tests-2] INFO Pages.SignInPage Click on register 
+2025-12-05 22:10:01[TestNG-tests-2] INFO Pages.SignInPage Verify Sign-IN Page Title 
+2025-12-05 22:10:02[TestNG-tests-3] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:10:03[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:10:03[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:10:03[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:10:03[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:10:08[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:10:08[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:10:08[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:10:08[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:10:08[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:10:08[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:10:10[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:10:10[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:10:10[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:10:10[TestNG-tests-2] INFO Pages.SignInPage Click on register! 
+2025-12-05 22:10:11[TestNG-tests-2] INFO Pages.SignInPage Verify Sign-IN Page Title 
+2025-12-05 22:10:11[TestNG-tests-1] INFO Pages.SignInPage Click on register! 
+2025-12-05 22:10:12[TestNG-tests-1] INFO Pages.SignInPage Verify Sign-IN Page Title 
+2025-12-05 22:10:13[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:10:14[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:10:17[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:10:17[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:10:17[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:10:19[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:10:19[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:10:20[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:10:21[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:10:21[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:10:22[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:10:23[TestNG-tests-1] INFO Pages.SignInPage Login for user:  
+2025-12-05 22:10:23[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:10:24[TestNG-tests-1] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:10:24[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:10:25[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:10:26[TestNG-tests-2] INFO Pages.SignInPage Login for user:  
+2025-12-05 22:10:27[TestNG-tests-3] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:10:28[TestNG-tests-2] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:10:28[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:10:28[TestNG-tests-3] INFO Pages.Queue Click on try here :Implementation using array 
+2025-12-05 22:10:31[TestNG-tests-3] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:10:32[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:10:32[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:10:37[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:10:48[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:10:50[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:10:52[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:10:53[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:10:55[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:10:57[TestNG-tests-3] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:10:57[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:10:57[TestNG-tests-3] INFO Pages.Queue Click on try here :Queue Operations 
+2025-12-05 22:11:00[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:11:00[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:11:00[TestNG-tests-3] INFO Pages.Queue Enter code:print('Implementation of Queue in Python') 
+2025-12-05 22:11:01[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:11:02[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:11:02[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:11:02[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:11:03[TestNG-tests-1] INFO Pages.SignInPage Login for user:  
+2025-12-05 22:11:04[TestNG-tests-1] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:11:05[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:11:09[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:11:09[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:11:10[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:11:10[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:11:10[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:11:11[TestNG-tests-2] INFO Pages.SignInPage Login for user:  
+2025-12-05 22:11:12[TestNG-tests-2] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:11:24[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:11:25[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:11:26[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:11:28[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:11:31[TestNG-tests-3] INFO Pages.Queue Click on Implementation of Queue in Python 
+2025-12-05 22:11:31[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:11:32[TestNG-tests-3] INFO Pages.Queue Click on try here :Implementation of Queue in Python 
+2025-12-05 22:11:33[TestNG-tests-3] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:11:34[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:11:34[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:11:37[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:11:38[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:11:41[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:11:41[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:11:42[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:11:43[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:11:44[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:11:45[TestNG-tests-1] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:11:51[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:11:51[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:11:52[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:11:53[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:11:53[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:11:55[TestNG-tests-3] INFO Pages.Queue Click on Implementation using collections.deque 
+2025-12-05 22:11:56[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:11:56[TestNG-tests-3] INFO Pages.Queue Click on try here :Implementation using collections.deque 
+2025-12-05 22:11:59[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:11:59[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:11:59[TestNG-tests-3] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:12:00[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:12:00[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:12:00[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:12:01[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:12:02[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:12:03[TestNG-tests-2] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:12:06[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:12:19[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:20[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:12:22[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:12:23[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:12:25[TestNG-tests-3] INFO Pages.Queue Click on Implementation using array 
+2025-12-05 22:12:26[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:12:26[TestNG-tests-3] INFO Pages.Queue Click on try here :Implementation using array 
+2025-12-05 22:12:27[TestNG-tests-3] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:12:28[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:12:28[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:12:28[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:12:32[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:32[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:33[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:12:34[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:12:34[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:12:34[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:12:35[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:12:36[TestNG-tests-1] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:12:39[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:39[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:40[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:12:41[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:12:41[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:12:42[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:12:45[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:45[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:45[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:12:46[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:12:47[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:47[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:12:48[TestNG-tests-1] INFO Pages.SignInPage Login for user: S 
+2025-12-05 22:12:49[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:12:49[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:12:50[TestNG-tests-1] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:12:50[TestNG-tests-2] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:12:51[TestNG-tests-3] INFO Pages.Queue Click on Queue Operations 
+2025-12-05 22:12:51[TestNG-tests-3] INFO Pages.Queue Verify title of Queue Page Links 
+2025-12-05 22:12:51[TestNG-tests-3] INFO Pages.Queue Click on try here :Queue Operations 
+2025-12-05 22:12:52[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:12:52[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:12:53[TestNG-tests-3] INFO Pages.Queue Enter code:abc 
+2025-12-05 22:12:53[TestNG-tests-3] INFO Pages.Queue Click on Run to execute code 
+2025-12-05 22:12:53[TestNG-tests-3] INFO Pages.Queue Validate code  output 
+2025-12-05 22:12:57[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:57[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:57[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:12:58[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:58[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:12:58[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:12:58[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:12:59[TestNG-tests-2] INFO Pages.SignInPage Login for user: S 
+2025-12-05 22:13:00[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:00[TestNG-tests-2] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:13:01[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:13:02[TestNG-tests-1] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:13:02[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:13:02[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:13:03[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:13:05[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:05[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:07[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:13:08[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:08[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:08[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:13:10[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:10[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:11[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:13:11[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-228 
+2025-12-05 22:13:12[TestNG-tests-2] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:13:13[TestNG-tests-1] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:13:14[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:14[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:14[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:13:15[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:16[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:16[TestNG-tests-3] INFO Pages.SignInPage Verify Sign-IN Page Title 
+2025-12-05 22:13:17[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:13:17[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:13:21[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:21[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:22[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:22[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:22[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:13:22[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:13:23[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:23[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:24[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test$229 
+2025-12-05 22:13:24[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-228 
+2025-12-05 22:13:25[TestNG-tests-1] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:13:25[TestNG-tests-2] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:13:26[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:13:27[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:13:28[TestNG-tests-1] INFO DriverFactory.DriverFactory You selected chrome to run these tests 
+2025-12-05 22:13:32[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:32[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:35[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:13:35[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:35[TestNG-tests-1] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:36[TestNG-tests-1] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:13:37[TestNG-tests-1] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:38[TestNG-tests-1] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:13:38[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:39[TestNG-tests-1] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:13:39[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test$229 
+2025-12-05 22:13:40[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:40[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:40[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:13:41[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:42[TestNG-tests-3] INFO Pages.SignInPage Click on register 
+2025-12-05 22:13:42[TestNG-tests-3] INFO Pages.SignInPage Verify Sign-IN Page Title 
+2025-12-05 22:13:42[TestNG-tests-2] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:13:45[TestNG-tests-2] INFO DriverFactory.DriverFactory You selected edge to run these tests 
+2025-12-05 22:13:45[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:13:48[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:49[TestNG-tests-2] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:49[TestNG-tests-2] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:13:50[TestNG-tests-2] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:50[TestNG-tests-2] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:13:51[TestNG-tests-2] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:13:55[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:55[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:13:56[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:13:56[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:13:57[TestNG-tests-3] INFO Pages.SignInPage Click on register! 
+2025-12-05 22:13:57[TestNG-tests-3] INFO Pages.SignInPage Verify Sign-IN Page Title 
+2025-12-05 22:13:59[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:14:06[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:14:06[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:14:07[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:14:07[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:14:08[TestNG-tests-3] INFO Pages.SignInPage Login for user:  
+2025-12-05 22:14:08[TestNG-tests-3] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:14:43[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:14:50[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:14:50[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:14:51[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:14:52[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:14:52[TestNG-tests-3] INFO Pages.SignInPage Login for user:  
+2025-12-05 22:14:52[TestNG-tests-3] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:15:25[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:15:31[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:15:31[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:15:32[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:15:32[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:15:33[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:15:33[TestNG-tests-3] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:16:05[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:16:11[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:16:11[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:16:11[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:16:12[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:16:13[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:16:14[TestNG-tests-3] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:16:15[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:16:21[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:16:21[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:16:21[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:16:22[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:16:23[TestNG-tests-3] INFO Pages.SignInPage Login for user: S 
+2025-12-05 22:16:24[TestNG-tests-3] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:16:25[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:16:31[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:16:31[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:16:31[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:16:32[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:16:33[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:16:33[TestNG-tests-3] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:16:35[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:16:41[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:16:41[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:16:41[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:16:42[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:16:43[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-228 
+2025-12-05 22:16:43[TestNG-tests-3] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:16:45[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:16:50[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:16:50[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:16:51[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:16:52[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:16:52[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test$229 
+2025-12-05 22:16:53[TestNG-tests-3] INFO Pages.SignInPage Verify Login  
+2025-12-05 22:16:55[TestNG-tests-3] INFO DriverFactory.DriverFactory You selected firefox to run these tests 
+2025-12-05 22:17:00[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:17:00[TestNG-tests-3] INFO Pages.LaunchPage Loading the DSAlgo portal.... 
+2025-12-05 22:17:01[TestNG-tests-3] INFO Pages.LaunchPage clicking on GetStarted button now 
+2025-12-05 22:17:01[TestNG-tests-3] INFO Pages.SignInPage Click On SignIn Link 
+2025-12-05 22:17:02[TestNG-tests-3] INFO Pages.SignInPage Login for user: Test-229 
+2025-12-05 22:17:03[TestNG-tests-3] INFO Pages.SignInPage Verify Login  
