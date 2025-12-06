@@ -51,7 +51,7 @@ public class ExcelUtil {
 		Object[][] finalTestData = new Object[data.size()][1];
 		for (int i = 0; i < data.size(); i++) {
 			finalTestData[i][0] = data.get(i);
-			System.out.println("final test data is " + finalTestData[i][0]);
+
 		}
 
 		return finalTestData;
