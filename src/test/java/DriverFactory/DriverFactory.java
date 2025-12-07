@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 
 import Utils.ConfigReader;
 import io.cucumber.java.After;
@@ -52,11 +51,7 @@ public class DriverFactory {
 			tldriver.set(new ChromeDriver());
 
 		} else if (browserName.trim().equalsIgnoreCase("firefox")) {
-			FirefoxOptions options = new FirefoxOptions();
-			options.setCapability("moz:webdriverClick", true);
-			options.addArguments("--width=1920");
-			options.addArguments("--height=1080");
-			tldriver.set(new FirefoxDriver(options));
+			tldriver.set(new FirefoxDriver());
 
 		} else if (browserName.trim().equalsIgnoreCase("edge")) {
 			tldriver.set(new EdgeDriver());
