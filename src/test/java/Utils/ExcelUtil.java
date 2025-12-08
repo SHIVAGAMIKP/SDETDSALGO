@@ -14,7 +14,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtil {
 
-	private static String filepath = "src/test/resources/test_data/DSAlgo1.xlsx";
+	private static String filepath = "src/test/resources/test_data/DSAlgo.xlsx";
 	private static XSSFWorkbook workbook;
 	private static XSSFSheet sheet;
 
