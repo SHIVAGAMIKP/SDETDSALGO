@@ -1,7 +1,5 @@
 Feature: Launching the application
 
-
-
   Scenario: Navigation from launch page to home page
     Given The user opens DSAlgo portal link
     When The User clicks on GetStarted
@@ -61,16 +59,16 @@ Feature: Launching the application
       | Graph                        |
 
   Scenario Outline: User is on Home page and clicks GetStarted button for "<topic>" after SignIn
-    Given User is signed in and on Home Page 
+    Given User is signed in and on Home Page
     When The user clicks on Get Started button for corresponding "<topic>"
     Then User should be navigating to the corresponding "<expectedHeading>" introduction page
 
-     Examples: 
+    Examples:
       | topic                        | expectedHeading              |
       | Data Structures-Introduction | Data Structures-Introduction |
-      | Array                        | Array                        | 
+      | Array                        | Array                        |
       | Linked List                  | Linked List                  |
       | Stack                        | Stack                        |
-      | Queue                        | Queue                        |  
-      | Tree                         | Tree                         | 
+      | Queue                        | Queue                        |
+      | Tree                         | Tree                         |
       | Graph                        | Graph                        |
