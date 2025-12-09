@@ -22,7 +22,6 @@ Feature: Graph Module
   Scenario Outline: : Verify TryHere Link and code execution for links on  Graph Page
     Given User is in "<GraphPageLinks>" Page.
     When  User clicks on TryHere link on  "<GraphPageLinks>" and clicks on run button to execute the "<Code>" entered in Editor space.
-    #And User clicks on run button to execute the "<Code>" entered in Editor space.
     Then "<Output>" for the executed code should be displayed.
 
     Examples:

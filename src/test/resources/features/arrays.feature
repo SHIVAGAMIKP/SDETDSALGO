@@ -52,16 +52,7 @@ Feature: Arrays Introduction Page
       | Arrays Using List         |
       | Basic Operations in Lists |
       | Applications of Array     |
-# Scenario Outline: Execute invalid Python code in editor
-# Given user is on text editor page for corresponding "<subTopic>" page
-# When user enters invalid python "<code>" and clicks Run button
-# Then error message should be displayed in popup window "<expected_output>"
-# Examples:
-# | subTopic                  | code                     | expected_output                                    |
-# | Arrays in Python          | print('Hello, World!'):  | SyntaxError: bad input on line 1                   |
-# | Arrays Using List         | print('Hello, World!'    | SyntaxError: EOF in multi-line statement on line 2 |
-# | Basic Operations in Lists | print('Hello, World!');[ | SyntaxError: EOF in multi-line statement on line 2 |
-# | Applications of Array     | print('Hello, World!');[ | SyntaxError: EOF in multi-line statement on line 2 |
+
 
   Scenario: Redirect from Applications of Array page to Practice Question link
     Given user is on Applications of Array page
