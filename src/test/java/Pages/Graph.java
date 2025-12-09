@@ -51,11 +51,6 @@ public class Graph {
 
 	public String goToGraphPAge() {
 
-		// Actions actions = new Actions(driver);
-		// actions.scrollToElement(graphStartButton).perform();
-		// actions.click(graphStartButton).build().perform();
-		// // qStartButton.click();
-		// System.out.println(driver.getTitle());
 		((JavascriptExecutor) driver).executeScript(
 				"arguments[0].scrollIntoView({block: 'center'});",
 				graphStartButton);

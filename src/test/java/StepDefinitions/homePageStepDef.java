@@ -112,15 +112,4 @@ public class homePageStepDef {
 		hp.getStartedclick(topic);
 	}
 
-	/*
-	 * @Then("User should see page navigated to the corresponding {string} introduction page"
-	 * ) public void
-	 * user_should_see_page_navigated_to_the_corresponding_introduction_page(
-	 * String expectedTitle) {
-	 * 
-	 * // String actualTitle=hp.fetchIntroductionPageTitle();
-	 * 
-	 * Assert.assertEquals(actualTitle,expectedTitle,
-	 * "page title does not match"); }
-	 */
 }

@@ -40,8 +40,7 @@ public class QueueStepDef {
 
 		lp.launchApplication();
 		lp.clickGetStarted();
-		// lp.homeApplication();
-		// lp.clickGetStarted();
+
 		signIn.clickOnSignIn();
 		signIn.Login("Test-229", "Shivagami229.");
 

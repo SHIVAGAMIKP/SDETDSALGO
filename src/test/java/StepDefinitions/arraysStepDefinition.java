@@ -22,8 +22,6 @@ public class arraysStepDefinition {
 	SignInPage lp;
 	homePage hp;
 	arraysPage ap;
-	// practicePage pp;
-	// textEditor teditor;
 	private String output;
 	private String scenario;
 

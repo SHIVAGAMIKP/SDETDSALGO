@@ -17,14 +17,13 @@ public class GraphPageStepDef {
 	Graph gr = new Graph();
 	SignInPage signIn = new SignInPage();
 	homePage lp = new homePage();
-	// private Map<String, String> pythonTestCode;
 
 	@Given("User is in Graph Page.")
 	public void user_is_in_graph_page() {
 		lp.launchApplication();
-		// lp.homeApplication();
+
 		lp.clickGetStarted();
-		// lp.clickGetStarted();
+
 		signIn.clickOnSignIn();
 		signIn.Login("Test-229", "Shivagami229.");
 		Assert.assertEquals(gr.goToGraphPAge(), "Graph");

@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/rerun.txt"}, tags = "not @QQueueExcelDPDD and not @SiginDPDataDriven and not @SiginExcel-ScenarioDataDriven")
 
-public class failedTestRunner extends AbstractTestNGCucumberTests {
+public class FailedTestRunner extends AbstractTestNGCucumberTests {
 
 	@BeforeClass(alwaysRun = true)
 	@Parameters("browser")

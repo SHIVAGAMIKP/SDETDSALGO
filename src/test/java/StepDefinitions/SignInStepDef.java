@@ -28,8 +28,6 @@ public class SignInStepDef {
 
 		lp.launchApplication();
 		lp.clickGetStarted();
-		// lp.homeApplication();
-		// lp.clickGetStarted();
 		signIn.clickOnSignIn();
 
 	}

@@ -1,5 +1,10 @@
 package Runner;
 
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+
+import DriverFactory.DriverFactory;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
@@ -12,4 +17,12 @@ import io.cucumber.testng.CucumberOptions;
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 
+	@BeforeClass(alwaysRun = true)
+	@Parameters("browser")
+	public void beforeClass(@Optional("chrome") String browser) {
+		if (browser != null && !browser.equals("param-val-not-found")) {
+			System.out.println(browser);
+			DriverFactory.setupBrowser(browser);
+		}
+	}
 }

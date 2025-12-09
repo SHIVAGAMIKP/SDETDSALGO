@@ -47,11 +47,6 @@ public class Queue {
 
 	public String goToQueuePAge() {
 
-		// Actions actions = new Actions(driver);
-		// actions.scrollToElement(qStartButton).perform();
-		// actions.click(qStartButton).build().perform();
-		// System.out.println(driver.getTitle());
-
 		((JavascriptExecutor) driver).executeScript(
 				"arguments[0].scrollIntoView({block: 'center'});",
 				qStartButton);
@@ -145,11 +140,6 @@ public class Queue {
 	public boolean getOutput(String output) {
 
 		logger.info("Validate code  output");
-
-		// if (Savedata.getexecutionType() != null
-		// && Savedata.getexecutionType().equalsIgnoreCase("DD")) {
-		// output = Savedata.getData().get("Output");
-		// }
 
 		try {
 			Alert alert = driver.switchTo().alert();
