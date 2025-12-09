@@ -1,5 +1,6 @@
 package Utils;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,16 +12,16 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelUtil1 {
+public class ExcelUtil {
 
-	private static String filepath = "src/test/resources/test_data/DSAlgo.xlsx";
+	private static String filepath = "src/test/resources/TestData/DSAlgo.xlsx";
+
 	private static XSSFWorkbook workbook;
 	private static XSSFSheet sheet;
 
 	public synchronized Object[][] getData(String testsheet) throws Exception {
-
-		// FileInputStream filelocation = new FileInputStream(filepath);
-		workbook = new XSSFWorkbook(filepath);
+		FileInputStream filelocation = new FileInputStream(filepath);
+		workbook = new XSSFWorkbook(filelocation);
 		// sheet = workbook.getSheet("Queue");
 		sheet = workbook.getSheet(testsheet);
 
@@ -50,7 +51,7 @@ public class ExcelUtil1 {
 		Object[][] finalTestData = new Object[data.size()][1];
 		for (int i = 0; i < data.size(); i++) {
 			finalTestData[i][0] = data.get(i);
-
+			System.out.println("final test data is " + finalTestData[i][0]);
 		}
 
 		return finalTestData;
@@ -58,56 +59,32 @@ public class ExcelUtil1 {
 
 	public static List<Map<String, String>> getTestData(String sheetName)
 			throws IOException {
-		System.out.println(
-				"0file path is " + filepath + "  sheetname is" + sheetName);
-
-		// FileInputStream fis = new FileInputStream(filepath);
-		System.out.println(
-				"1file path is " + filepath + "  sheetname is" + sheetName);
-
-		// XSSFWorkbook workbook = new XSSFWorkbook(fis);
-		// XSSFSheet sheet = workbook.getSheet("Sheet1");
-
-		System.out.println(
-				"3file path is " + filepath + "  sheetname is" + sheetName);
 		List<Map<String, String>> testData = new ArrayList<>();
 
 		workbook = new XSSFWorkbook(filepath);
-		int total = workbook.getNumberOfSheets();
-		for (int i = 0; i < total; i++) {
-			System.out.println(
-					"Sheet[" + i + "] = '" + workbook.getSheetName(i) + "'");
-		}
 		sheet = workbook.getSheet(sheetName);
-		System.out.println(workbook);
-		System.out.println("Sheetname" + sheetName);
-		System.out.println("Sheetname" + sheet);
+
 		int rows = sheet.getPhysicalNumberOfRows();
 		int cols = sheet.getRow(0).getLastCellNum();
-		System.out.print("rows:" + rows + "columns:" + cols);
-		// List<Map<String, String>> data = new ArrayList<>();
 
+		// List<Map<String, String>> data = new ArrayList<>();
 		DataFormatter formatter = new DataFormatter();
 
 		for (int i = 1; i < rows; i++) {
-
 			Map<String, String> map = new HashMap<>();
 			XSSFRow row = sheet.getRow(i);
 
 			for (int j = 0; j < cols; j++) {
-
 				String key = sheet.getRow(0).getCell(j).getStringCellValue();
-
 				String value = (row.getCell(j) == null)
 						? ""
 						: formatter.formatCellValue(row.getCell(j));
-
+				// row.getCell(j).toString();
 				map.put(key, value);
 			}
-
 			testData.add(map);
 		}
-
+		// lock.unlock();
 		System.out.println(testData.getLast());
 		workbook.close();
 		return testData;
@@ -117,13 +94,9 @@ public class ExcelUtil1 {
 	public static Map<String, String> getTestRow(String sheetName,
 			String scenarioName) {
 
-		System.out.println(sheetName + scenarioName);
-
 		Map<String, String> getRow = null;
 		try {
-			System.out.print(sheetName + scenarioName);
-
-			List<Map<String, String>> code = ExcelUtil1.getTestData(sheetName);
+			List<Map<String, String>> code = ExcelUtil.getTestData(sheetName);
 			System.out.println("code is " + code.get(0));
 
 			getRow = code.stream().filter(
