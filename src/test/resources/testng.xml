@@ -8,21 +8,21 @@
     <test name="Parallel Test chrome" thread-count="5">
         <parameter name="browser" value="chrome"></parameter> 
         <classes>
-            <class name="Runner.TestRunner"/>
+            <class name="Runner.CrossBrowserJenkinsTestRunner"/>
         </classes>
     </test>
 
     <test name="Parallel Test edge" thread-count="5">
         <parameter name="browser" value="edge"></parameter> 
         <classes>
-            <class name="Runner.TestRunner"/>
+            <class name="Runner.CrossBrowserJenkinsTestRunner"/>
         </classes>
     </test>
 
     <test name="Parallel Test firefox" thread-count="5">
         <parameter name="browser" value="firefox"></parameter> 
         <classes>
-            <class name="Runner.TestRunner"/>
+            <class name="Runner.CrossBrowserJenkinsTestRunner"/>
         </classes>
     </test>
 

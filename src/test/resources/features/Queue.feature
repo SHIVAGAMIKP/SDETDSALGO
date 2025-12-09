@@ -47,7 +47,7 @@ Feature: Queue Module
    
    
 #Below two Scenarios is to validate valid and invalid  code through excel and Scenario Outline.
-@QScenarioOutlineDD
+@QSODD
   Scenario Outline: Verify TryHere Link and code execution for valid Queue code. 
     Given User is in "<QueuePageLinks>" Page.
     When User clicks on TryHere link on "<QueuePageLinks>" and executes the code by clicking on run button.
@@ -61,7 +61,7 @@ Feature: Queue Module
       | Queue Operations                       | 
       
       
-@QScenarioOutlineDD
+@QSODD
   Scenario Outline: Verify TryHere Link and code execution for invalid Queue code. 
     Given User is in "<QueuePageLinks>" Page.
     When User clicks on TryHere link on "<QueuePageLinks>" and executes the code by clicking on run button.

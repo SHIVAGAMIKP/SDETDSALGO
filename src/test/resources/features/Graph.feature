@@ -21,7 +21,7 @@ Feature: Graph Module
 @Graph50:50DD
   Scenario Outline: : Verify TryHere Link and code execution for links on  Graph Page
     Given User is in "<GraphPageLinks>" Page.
-    When  User clicks on TryHere link on  "<QueuePageLinks>" and clicks on run button to execute the "<Code>" entered in Editor space.
+    When  User clicks on TryHere link on  "<GraphPageLinks>" and clicks on run button to execute the "<Code>" entered in Editor space.
     #And User clicks on run button to execute the "<Code>" entered in Editor space.
     Then "<Output>" for the executed code should be displayed.
 
@@ -30,7 +30,7 @@ Feature: Graph Module
       | Graph                 | print('Graph')                 | Graph                 |
       | Graph Representations | print('Graph Representations') | Graph Representations |
       
-@GraphScenarioOutlineDD
+@GraphSODD
 Scenario Outline: Verify TryHere Link and code execution for valid Graph code.
     Given User is in "<GraphPageLinks>" Page.
     When User clicks on TryHere link on "<GraphPageLinks>" and executes the code by clicking on run button.
@@ -41,7 +41,7 @@ Scenario Outline: Verify TryHere Link and code execution for valid Graph code.
       | Graph                 | 
       | Graph Representations | 
       
-@GraphScenarioOutlineDD
+@GraphSODD
 Scenario Outline: Verify TryHere Link and code execution for invalid Graph code.
     Given User is in "<GraphPageLinks>" Page.
    	When User clicks on TryHere link on "<GraphPageLinks>" and executes the code by clicking on run button.

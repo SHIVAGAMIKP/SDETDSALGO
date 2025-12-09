@@ -17,13 +17,13 @@ Feature: Sign-In
     
     
     
-#To execute this scenario uae SignInDataDriven Runner
+#To execute this scenario use SignInDataDriven TestRunner
 @SiginDPDataDriven
   Scenario: Verify Login with valid and invalid credentials from Excel.
     When User enters username,password and clicks on Login.
     Then Verfiy expected message is displayed.
     
-@SiginExcel-ScenarioDataDriven
+@SiginSODD
   Scenario Outline: Verify Login with valid and invalid credentials from Excel through Scenario Outline.
     When User enters username,password and clicks on Login for "<TestCase>". 
     Then Expected message should be displayed.
