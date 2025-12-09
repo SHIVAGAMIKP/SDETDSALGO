@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import DriverFactory.DriverFactory;
-import Utils.ExcelUtil;
+import Utils.ExcelUtil1;
 
 public class arraysPage {
 
