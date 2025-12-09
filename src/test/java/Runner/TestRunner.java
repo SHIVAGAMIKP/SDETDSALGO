@@ -1,6 +1,7 @@
 package Runner;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -8,15 +9,11 @@ import DriverFactory.DriverFactory;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features = {
-		"src/test/resources/features/Sign-In.feature"}, glue = {
-				"StepDefinitions", "hooks"}, plugin = {"pretty",
-						"html:target/cucumber-report.html",
-						"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, tags = "not @QQueueExcelDPDD and not @SiginDPDataDriven and not @SiginExcel-ScenarioDataDriven")
-
-// src/test/resources/features/Graph.feature",
-// "src/test/resources/features/Queue.feature"
+@CucumberOptions(features = { "src/test/resources/features/home.feature","src/test/resources/features/arrays.feature"}, glue = {
+		"StepDefinitions","hooks" }, plugin = { "pretty", "html:target/cucumber-report.html",
+				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" })
+//,tags="@DD"
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 
@@ -29,4 +26,17 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 		}
 	}
 
+	@Override
+	@DataProvider(parallel = false)
+	public Object[][] scenarios(){
+		return super.scenarios();
+	}
 }
+
+//"src/test/resources/features/.feature"
+
+
+
+// "not @SiginDPExcel-DPDataDrive and not @QQueueExcelDPDD "
+// + "and not @SiginDPDataDriven and not @Queue50:50DD and not @Graph50:50DD")
+// tags = "not @SiginDPExcel-DPDataDrive and not @QQueueExcelDPDD"

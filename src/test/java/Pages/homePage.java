@@ -1,14 +1,20 @@
 package Pages;
 
-import java.time.Duration;
-//import java.lang.System.Logger;
+import java.lang.System.Logger;
 import java.util.List;
+import java.time.Duration;
 
+import org.apache.logging.log4j.LogManager;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import DriverFactory.DriverFactory;
@@ -16,31 +22,40 @@ import Utils.ConfigReader;
 
 public class homePage {
 
-	// private static final Logger logger =
-	// LogManager.getLogger(homePage.class);
+//	private static final Logger logger = LogManager.getLogger(homePage.class);
 	private WebDriver driver;
 	WebDriverWait wait;
 	// @FindBy(xpath="//div[2][@class='navbar-nav']/ul/a[1]")
+	
+	@FindBy(xpath = "//button[@class='btn']")
+	private WebElement getStartedButton;
+
 	@FindBy(xpath = "//a[contains(text(),' Register ')]") // register link
 	WebElement registerLink;
 	@FindBy(xpath = "//input[@value='Register']") // verify registerpage
 	WebElement register;
 	@FindBy(xpath = "//a[contains(text(),'Sign in')]") // signin link
 	WebElement signinLink;
-	@FindBy(xpath = "//input[@value='Login']") // verify signin page with login
-												// button text
+	@FindBy(xpath = "//input[@value='Login']") // verify signin page with login button text
 	WebElement signin;
 	@FindBy(xpath = "//input[@type='submit']")
 	WebElement loginBtn;
+	
+//	@FindBy(xpath = "//a[contains(@class,'nav-link dropdown-toggle')]")
+//	WebElement dropdownBtn;
+
+	@FindBy(xpath = "//div[contains(@class,'dropdown-menu')]/a")
+	List<WebElement> dropdownTopics;
+	
+	
 	@FindBy(xpath = "//a[contains(@class,'nav-link dropdown-toggle')]")
 	WebElement dropdownBtn;
-	@FindBy(xpath = "//div[contains(@class,'dropdown-menu show')]/a")
-	List<WebElement> dropdownTopics;
+//	@FindBy(xpath = "//div[contains(@class,'dropdown-menu show')]/a")
+//	List<WebElement> dropdownTopics;
 	// @FindBy(xpath="//div[contains(@class,'alert alert-primary')]")
 	@FindBy(xpath = "//div[contains(@class,'alert')]")
 	WebElement errorMsg;
-	// @FindBy(xpath="//div[contains(@class,'card-body d-flex
-	// flex-column')]/h5")
+	// @FindBy(xpath="//div[contains(@class,'card-body d-flex flex-column')]/h5")
 	@FindBy(xpath = "//div[@class='col']/div/div/h5")
 	List<WebElement> getstartedTopic;
 	// @FindBy(xpath="//div[contains(@class,'card-body d-flex flex-column')]/a")
@@ -51,14 +66,33 @@ public class homePage {
 	WebElement intropageHeading;
 
 	// @FindBy(xpath="//h4[contains(@class,'bg-secondary text-white')]")
+	
+	
 	public homePage() {
 		driver = DriverFactory.getDriver();
 		PageFactory.initElements(driver, this);
 	}
+	
+	public void clickGetStarted() {
+		
+		getStartedButton.click();
+	}
 
-	// select register link or signin link
+	public String fetchTitle() {
+		return driver.getTitle();
+
+	}
+
+	public void launchApplication() {
+		String url = ConfigReader.getProperty("url");
+		driver.get(url);
+	}
+	
+	
+
+//select register link or signin link
 	public void clickLink(String linkName) {
-		if (linkName.equalsIgnoreCase("Registers")) {
+		if (linkName.equalsIgnoreCase("Register")) {
 			registerLink.click();
 		} else if (linkName.equalsIgnoreCase("Sign in")) {
 			signinLink.click();
@@ -78,21 +112,141 @@ public class homePage {
 		System.out.print("Login button text: " + signintitle);
 		return signintitle;
 	}
+	
+	
+	public void selectTopicFromDropdown(String topicName) {
 
-	public void selectTopicFromDropdown(String topic) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-		dropdownBtn.click();
-		for (WebElement options : dropdownTopics) {
+	    int retries = 3;
+	    while (retries > 0) {
+	        try {
+	            
+	            WebElement freshDropdownBtn = wait.until(
+	                ExpectedConditions.elementToBeClickable(dropdownBtn));
+	                freshDropdownBtn.click();
+
+	            // Re-fetch dropdown options each time to avoid StaleElementReference Exception
+	            List<WebElement> freshOptions = wait.until(
+	                ExpectedConditions.visibilityOfAllElements(dropdownTopics));
+
+	            for (WebElement option : freshOptions) {
+	                if (option.getText().trim().equalsIgnoreCase(topicName)) {
+	                    wait.until(ExpectedConditions.elementToBeClickable(option)).click();
+	                    return;     
+	                }
+	            }
+
+	        } catch (StaleElementReferenceException e) {
+	            System.out.println("Stale detected → retrying...");
+	            // ReInitialize page factory to refresh all elements
+	            //
+	            PageFactory.initElements(driver, this);//recreates ALL @FindBy elements fresh from the current DOM.
+	            retries--;
+	        }
+	    }
+
+	    throw new RuntimeException("Dropdown option NOT found: " + topicName);
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+/*	public void selectTopicFromDropdown(String topic) {
+
+		
+		
+		 // refresh page factory elements to avoid stale element
+//	    PageFactory.initElements(driver, this);
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	    // 1. Open dropdown
+	    wait.until(ExpectedConditions.elementToBeClickable(dropdownBtn)).click();
+//	    wait.until(ExpectedConditions.visibilityOfAllElements(dropdownTopics));
+	    List<WebElement> currentDropdownOptions = driver.findElements(By.xpath("//div[contains(@class,'dropdown-menu')]/a"));
+	    wait.until(ExpectedConditions.visibilityOfAllElements(currentDropdownOptions));
+	    // 2. Fetch fresh elements AFTER dropdown opens
+/*	    List<WebElement> options = wait.until(
+	            ExpectedConditions.visibilityOfAllElementsLocatedBy(
+	                    By.xpath("//div[contains(@class,'dropdown-menu')]/a")
+	            )
+	    );*/
+
+	    // 3. Loop and click matching topic
+/*	    for (WebElement element : options) {
+
+	        String text = element.getText().trim();
+	        System.out.println("Found option: " + text);
+
+	        if (text.equalsIgnoreCase(topic)) {
+
+	            wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+	            System.out.println("Clicked topic: " + text);
+	            return;
+	        }
+	    }*/
+	/*    for (WebElement element : currentDropdownOptions) {
+	        if (element.getText().trim().equalsIgnoreCase(topic)) {
+	            wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+	            return;
+	        }
+	    }
+
+	    throw new RuntimeException("Topic not found in dropdown: " + topic);
+	}
+	*/
+	
+	
+	
+
+	/*public void selectTopicFromDropdown(String topic) {
+
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	//    wait.until(ExpectedConditions.elementToBeClickable(dropdownBtn)).click();;// click dropdown button
+	 //   dropdownBtn.click();//
+	
+	    // Re-initialize PageFactory to refresh dropdownTopics list
+//	    PageFactory.initElements(driver, this);
+
+//	    wait.until(ExpectedConditions.visibilityOfAllElements(dropdownTopics));
+	     
+	    Actions actions = new Actions(driver);
+	 //   WebElement dropdown = driver.findElement(By.id("dropdownMenuButton"));
+	    actions.moveToElement(dropdownBtn).click().perform();
+
+	  //  WebElement graphOption = driver.findElement(By.xpath("//div[contains(@class,'dropdown-menu')]/a[text()='Graph']"));
+	 //   graphOption.click();
+
+	 //   List<WebElement> freshOptions = wait.until(ExpectedConditions.visibilityOfAllElements(dropdownTopics));
+	//    dropdownBtn.click();
+	    // Re-fetch options after dropdown opens
+	    List<WebElement> freshOptions = wait.until(
+	        ExpectedConditions.visibilityOfAllElementsLocatedBy(
+	            By.xpath("//div[contains(@class,'dropdown-menu')]/a")
+	        )
+	    );
+
+		for (WebElement options : freshOptions) {
 			String optionsTxt = options.getText();
+			
 
 			if (optionsTxt.equalsIgnoreCase(topic)) {
+				
+			 wait.until(ExpectedConditions.elementToBeClickable(options)).click();
 				options.click();
+			
 				System.out.print("options are: " + optionsTxt);
 				break;
 			}
 		}
 
-	}
+	}    */
 
 	public String fetchErrorMsg() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -103,12 +257,9 @@ public class homePage {
 
 	public void getStartedclick(String topic) {
 
-		for (int i = 0; i < getstartedTopic.size(); i++) { // looping since it
-															// has multiple
-															// getstarted button
+		for (int i = 0; i < getstartedTopic.size(); i++) { // looping since it has multiple getstarted button
 
-			String topicsTxt = getstartedTopic.get(i).getText();// getting exact
-																// location text
+			String topicsTxt = getstartedTopic.get(i).getText();// getting exact location text
 			System.out.println("Index: " + i + " | Topic: " + topicsTxt);
 			if (topicsTxt.equalsIgnoreCase(topic)) {
 				WebElement btn = getstartedBtn.get(i);
