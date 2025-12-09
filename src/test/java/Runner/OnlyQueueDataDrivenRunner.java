@@ -21,7 +21,7 @@ import io.cucumber.testng.TestNGCucumberRunner;
 
 @CucumberOptions(features = "src/test/resources/features/Queue.feature", glue = {
 		"StepDefinitions", "hooks"}, plugin = {"pretty",
-				"html:target/cucumber-report.html",
+				"html:target/cucumber-report.html", "json:target/cucumber.json",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}, tags = "@QQueueExcelDPDD ")
 

@@ -23,6 +23,7 @@ import io.cucumber.testng.TestNGCucumberRunner;
 		"src/test/resources/features/Queue.feature"}, glue = {"StepDefinitions",
 				"hooks"}, plugin = {"pretty",
 						"html:target/cucumber-report.html",
+						"json:target/cucumber.json",
 						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 						"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}, tags = "@Graph50:50DD or @Queue50:50DD")
 
