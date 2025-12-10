@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import DriverFactory.DriverFactory;
 import Utils.ConfigReader;
 
-public class homePage {
+public class HomePage {
 
 	private WebDriver driver;
 	WebDriverWait wait;
@@ -51,7 +51,7 @@ public class homePage {
 	@FindBy(xpath = "//h4[contains(@class,'bg-secondary text-white')]")
 	WebElement intropageHeading;
 
-	public homePage() {
+	public HomePage() {
 		driver = DriverFactory.getDriver();
 		PageFactory.initElements(driver, this);
 	}

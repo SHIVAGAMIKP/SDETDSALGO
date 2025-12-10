@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import DriverFactory.DriverFactory;
 
-public class arraysPage {
+public class ArraysPage {
 
 	private WebDriver driver;
 	@FindBy(xpath = "//div[2][@class='col']/div[1]/div/a")
@@ -47,7 +47,7 @@ public class arraysPage {
 
 	WebElement practicesubTopicsTitle;
 
-	public arraysPage() {
+	public ArraysPage() {
 		driver = DriverFactory.getDriver();
 		PageFactory.initElements(driver, this);
 

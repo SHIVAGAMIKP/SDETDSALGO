@@ -7,8 +7,8 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 import Pages.SignInPage;
-import Pages.arraysPage;
-import Pages.homePage;
+import Pages.ArraysPage;
+import Pages.HomePage;
 import Utils.ExcelUtil;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -16,12 +16,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class arraysStepDefinition {
+public class ArraysStepDefinition {
 	private static final Logger logger = LogManager
-			.getLogger(arraysStepDefinition.class);
+			.getLogger(ArraysStepDefinition.class);
 	SignInPage lp;
-	homePage hp;
-	arraysPage ap;
+	HomePage hp;
+	ArraysPage ap;
 	private String output;
 	private String scenario;
 
@@ -34,14 +34,14 @@ public class arraysStepDefinition {
 
 	@Given("user is signed into Arrays Introduction page")
 	public void user_is_signed_into_arrays_introduction_page() {
-		hp = new homePage();
+		hp = new HomePage();
 		hp.homeApplication();
 		hp.gotosignin();
 
 		lp = new SignInPage();
 		lp.Login("Test-229", "Shivagami229.");
 
-		ap = new arraysPage();
+		ap = new ArraysPage();
 		ap.arraysgetstartedClick();
 		ap.fetchArrayspageTitle();
 

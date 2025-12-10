@@ -26,7 +26,7 @@ import io.cucumber.testng.TestNGCucumberRunner;
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}, tags = "@SiginDPDataDriven")
 
-public class SignInDatadrivenRunner {
+public class SignInDatadrivenTestRunner {
 
 	private TestNGCucumberRunner runner;
 

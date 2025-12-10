@@ -4,9 +4,9 @@ import java.util.List;
 
 import org.testng.Assert;
 
-import Pages.Graph;
+import Pages.GraphPage;
 import Pages.SignInPage;
-import Pages.homePage;
+import Pages.HomePage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,9 +14,9 @@ import io.cucumber.java.en.When;
 
 public class GraphPageStepDef {
 
-	Graph gr = new Graph();
+	GraphPage gr = new GraphPage();
 	SignInPage signIn = new SignInPage();
-	homePage lp = new homePage();
+	HomePage lp = new HomePage();
 
 	@Given("User is in Graph Page.")
 	public void user_is_in_graph_page() {

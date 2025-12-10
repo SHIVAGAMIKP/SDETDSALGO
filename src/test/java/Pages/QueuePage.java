@@ -19,9 +19,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import DriverFactory.DriverFactory;
 
-public class Queue {
+public class QueuePage {
 
-	private static final Logger logger = LogManager.getLogger(Queue.class);
+	private static final Logger logger = LogManager.getLogger(QueuePage.class);
 	private WebDriver driver;
 
 	@FindBy(xpath = "//ul//a[@class='list-group-item']")
@@ -39,7 +39,7 @@ public class Queue {
 	@FindBy(linkText = "Try here>>>") // Try here>>>
 	WebElement tryHereLink;
 
-	public Queue() {
+	public QueuePage() {
 		driver = DriverFactory.getDriver();
 		PageFactory.initElements(driver, this);
 

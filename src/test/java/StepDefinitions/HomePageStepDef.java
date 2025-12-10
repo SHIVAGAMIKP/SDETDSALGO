@@ -6,21 +6,21 @@ import org.testng.Assert;
 
 import Pages.SignInPage;
 //import Pages.LaunchPage;
-import Pages.homePage;
+import Pages.HomePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class homePageStepDef {
+public class HomePageStepDef {
 	private static final Logger logger = LogManager
-			.getLogger(homePageStepDef.class);
+			.getLogger(HomePageStepDef.class);
 
-	homePage hp;
+	HomePage hp;
 	SignInPage lp;
 
 	@Given("The user opens DSAlgo portal link")
 	public void user_is_in_launch_page() {
-		hp = new homePage();
+		hp = new HomePage();
 		hp.launchApplication();
 
 	}
@@ -39,7 +39,7 @@ public class homePageStepDef {
 	@Given("User is on home page")
 	public void user_is_on_home_page() {
 
-		hp = new homePage();
+		hp = new HomePage();
 		hp.homeApplication();
 
 	}
@@ -85,7 +85,7 @@ public class homePageStepDef {
 
 	@Given("User is signed in and on Home Page")
 	public void user_is_signed_in_and_on_home_page() {
-		hp = new homePage();
+		hp = new HomePage();
 		hp.homeApplication();
 		hp.gotosignin();
 		lp = new SignInPage();

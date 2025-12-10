@@ -8,7 +8,7 @@ import org.testng.Assert;
 
 import DriverFactory.DriverFactory;
 import Pages.SignInPage;
-import Pages.homePage;
+import Pages.HomePage;
 import Utils.ExcelUtil;
 import Utils.Savedata;
 import io.cucumber.java.en.Given;
@@ -20,7 +20,7 @@ public class SignInStepDef {
 	DriverFactory df = new DriverFactory();
 
 	SignInPage signIn = new SignInPage();
-	homePage lp = new homePage();
+	HomePage lp = new HomePage();
 	private String expectedMessage;
 
 	@Given("User is in Sign-Page.")

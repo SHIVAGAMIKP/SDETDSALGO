@@ -5,9 +5,9 @@ import java.util.Map;
 
 import org.testng.Assert;
 
-import Pages.Queue;
+import Pages.QueuePage;
 import Pages.SignInPage;
-import Pages.homePage;
+import Pages.HomePage;
 import Utils.ExcelUtil;
 import Utils.Savedata;
 import io.cucumber.datatable.DataTable;
@@ -21,10 +21,10 @@ public class QueueStepDef {
 
 	private String output;
 
-	Queue queue = new Queue();
+	QueuePage queue = new QueuePage();
 
 	SignInPage signIn = new SignInPage();
-	homePage lp = new homePage();
+	HomePage lp = new HomePage();
 
 	private String scenario;
 

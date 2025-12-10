@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import DriverFactory.DriverFactory;
 
-public class Graph {
+public class GraphPage {
 
 	@FindBy(xpath = "//a[@href='graph']")
 	WebElement graphStartButton;
@@ -40,10 +40,10 @@ public class Graph {
 	@FindBy(linkText = "Try here>>>")
 	WebElement tryHereLink;
 
-	private static final Logger logger = LogManager.getLogger(Graph.class);
+	private static final Logger logger = LogManager.getLogger(GraphPage.class);
 	private WebDriver driver;
 
-	public Graph() {
+	public GraphPage() {
 		driver = DriverFactory.getDriver();
 		PageFactory.initElements(driver, this);
 
