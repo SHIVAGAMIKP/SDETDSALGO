@@ -19,9 +19,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import DriverFactory.DriverFactory;
 
-public class Queue {
+public class QueuePage {
 
-	private static final Logger logger = LogManager.getLogger(Queue.class);
+	private static final Logger logger = LogManager.getLogger(QueuePage.class);
 	private WebDriver driver;
 
 	@FindBy(xpath = "//ul//a[@class='list-group-item']")
@@ -30,27 +30,22 @@ public class Queue {
 	WebElement qStartButton;
 	@FindBy(xpath = "//div/strong/p")
 	WebElement qPageLinkTitle;
-	@FindBy(xpath = "//div[@class='CodeMirror-scroll']") // div[@class='input']
+	@FindBy(xpath = "//div[@class='CodeMirror-scroll']")
 	WebElement codeSpace1;
-	@FindBy(xpath = "//button[text()='Run']") // button[text()='Run']
+	@FindBy(xpath = "//button[text()='Run']")
 	WebElement runButton;
-	@FindBy(id = "output") // id="output"
+	@FindBy(id = "output")
 	WebElement Output;
-	@FindBy(linkText = "Try here>>>") // Try here>>>
+	@FindBy(linkText = "Try here>>>")
 	WebElement tryHereLink;
 
-	public Queue() {
+	public QueuePage() {
 		driver = DriverFactory.getDriver();
 		PageFactory.initElements(driver, this);
 
 	}
 
-	public String goToQueuePAge() {
-
-		// Actions actions = new Actions(driver);
-		// actions.scrollToElement(qStartButton).perform();
-		// actions.click(qStartButton).build().perform();
-		// System.out.println(driver.getTitle());
+	public void goToQueuePAge() {
 
 		((JavascriptExecutor) driver).executeScript(
 				"arguments[0].scrollIntoView({block: 'center'});",
@@ -61,7 +56,6 @@ public class Queue {
 		wait.until(ExpectedConditions.elementToBeClickable(qStartButton));
 
 		qStartButton.click();
-		return driver.getTitle();
 
 	}
 
@@ -73,7 +67,6 @@ public class Queue {
 
 			for (WebElement qlink : qlinkCount) {
 				qLinkName.add(qlink.getText());
-				System.out.println(qlink.getText());
 			}
 
 		} else
@@ -84,24 +77,23 @@ public class Queue {
 		}
 		logger.info("Verifying Names of links on Queue page: "
 				+ qLinkName.equals(linknames));
-		System.out.println(qLinkName.equals(linknames));
 		return (qLinkName.equals(linknames));
 
 	}
 
-	public boolean clickonQLinks(String QueuePageLinks) {
+	public void clickonQLinks(String QueuePageLinks) {
 
 		logger.info("Click on " + QueuePageLinks);
 		for (WebElement qlink : qlinkCount) {
-
-			if (qlink.getText().strip()
+			System.out.println(qlink.getText());
+			if (qlink.getText().trim()
 					.equalsIgnoreCase(QueuePageLinks.strip())) {
 				qlink.click();
-				return true;
+
+				break;
+
 			}
 		}
-		logger.info("Click links on Queue Page: " + QueuePageLinks + " Fail");
-		return false;
 
 	}
 
@@ -118,15 +110,20 @@ public class Queue {
 
 	}
 
-	public boolean TryHere(String QueuePageLinks) {
+	public void TryHere(String QueuePageLinks) {
 
 		logger.info("Click on try here :" + QueuePageLinks);
 		tryHereLink.click();
 
+	}
+
+	public boolean VerifyAssementPage() {
+
 		if (driver.getTitle().equalsIgnoreCase("Assessment")) {
+			logger.info("Tryhere Link - Assement page displayed");
 			return true;
 		}
-		logger.info("Click on try here for " + QueuePageLinks + "Fail");
+		logger.error("Tryhere Link - Assement page Fail");
 		return false;
 
 	}
@@ -146,16 +143,10 @@ public class Queue {
 
 		logger.info("Validate code  output");
 
-		// if (Savedata.getexecutionType() != null
-		// && Savedata.getexecutionType().equalsIgnoreCase("DD")) {
-		// output = Savedata.getData().get("Output");
-		// }
-
 		try {
 			Alert alert = driver.switchTo().alert();
 			String alertMsg = alert.getText();
 			alert.accept();
-			System.out.println(alertMsg);
 			return (alertMsg.equalsIgnoreCase(output.trim()));
 		} catch (NoAlertPresentException e) {
 			return (Output.getText().equalsIgnoreCase(output.trim()));

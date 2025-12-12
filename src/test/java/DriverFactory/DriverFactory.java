@@ -1,3 +1,4 @@
+
 package DriverFactory;
 
 import java.time.Duration;
@@ -27,13 +28,10 @@ public class DriverFactory {
 
 	public static void setupBrowser(String browser) {
 		plbrowser.set(browser);
-		System.out.println(browser);
 
 	}
 
 	public static String getBrowser() {
-
-		System.out.println("plbrosweris set to" + plbrowser.get());
 		return plbrowser.get();
 
 	}
@@ -42,9 +40,10 @@ public class DriverFactory {
 
 		String browserName = plbrowser.get();
 		if (browserName == null) {
+
 			browserName = ConfigReader.getProperty("browser");
 		}
-		System.out.println(browserName);
+
 		logger.info("You selected " + browserName + " to run these tests");
 
 		if (browserName.trim().equalsIgnoreCase("chrome")) {
@@ -62,8 +61,7 @@ public class DriverFactory {
 		}
 		driver = tldriver.get();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-		driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().window().maximize();
 
 	}

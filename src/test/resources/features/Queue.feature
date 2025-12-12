@@ -22,35 +22,22 @@ Feature: Queue Module
       | Queue Operations                       |
       
       
-@Queue50:50DD
-  Scenario Outline: : Verify TryHere Link and code execution for Queue Page
-    Given User is in "<QueuePageLinks>" Page.
-    When  User clicks on TryHere link on  "<QueuePageLinks>" and clicks on run button to execute the "<Code>" entered in Editor space.
-    Then "<Output>" for the executed code should be displayed.
+   Scenario Outline: Verify TryHere Link for all the links on Queue Page.
+    Given User is in "<QueuePageLinks>" page of Queue module.
+    When User clicks on TryHere link in "<QueuePageLinks>" page of Queue module
+    Then Verfiy the Editor Page is displayed.
 
    Examples:
-      | QueuePageLinks                         | Code                                            | Output                                 |
-      | Implementation of Queue in Python      | print('Implementation of Queue in Python')      | Implementation of Queue in Python      |
-      | Implementation using collections.deque | print('Implementation using collections.deque') | Implementation using collections.deque |
-      | Implementation using array             | print('Implementation using array')             | Implementation using array             |
-      | Queue Operations                       | print('Queue Operations')                       | Queue Operations                       |
-      
-      
-#This Scenario is to validate valid and invalid  code through excel and data provider.
- 
- @QQueueExcelDPDD    
-  Scenario: Verify code execution for Queue Page - ExcelDD
-   Given User is in Queue Page Links.
-   When User clicks on TryHere link on  QueuePage Links
-   And  User clicks on run button to execute the sample code entered in Queue Editor.
-   Then Output for the executed code should be displayed.
-   
-   
-#Below two Scenarios is to validate valid and invalid  code through excel and Scenario Outline.
-@QScenarioOutlineDD
-  Scenario Outline: Verify TryHere Link and code execution for valid Queue code. 
-    Given User is in "<QueuePageLinks>" Page.
-    When User clicks on TryHere link on "<QueuePageLinks>" and executes the code by clicking on run button.
+      | QueuePageLinks                         | 
+      | Implementation of Queue in Python      | 
+      | Implementation using collections.deque |
+      | Implementation using array             | 
+      | Queue Operations                       |   
+
+
+  Scenario Outline: Verify code execution for valid Queue code. 
+    Given User is in "<QueuePageLinks>" code execution Page.
+    When User enters the code in editor space and clicks on run button to execute the code.
     Then Verfiy the expected and actual ouput displayed.
 
    Examples:
@@ -61,11 +48,10 @@ Feature: Queue Module
       | Queue Operations                       | 
       
       
-@QScenarioOutlineDD
-  Scenario Outline: Verify TryHere Link and code execution for invalid Queue code. 
-    Given User is in "<QueuePageLinks>" Page.
-    When User clicks on TryHere link on "<QueuePageLinks>" and executes the code by clicking on run button.
-    Then Verfiy the expected and actual ouput displayed.
+  Scenario Outline: Verify code execution for invalid Queue code. 
+    Given User is in "<QueuePageLinks>" code execution Page.
+    When  User enters the code in editor space and clicks on run button to execute the code.
+    Then  Verfiy the expected and actual ouput displayed.
 
    Examples:
       | QueuePageLinks                         | 

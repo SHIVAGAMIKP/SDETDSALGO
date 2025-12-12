@@ -15,18 +15,13 @@ Feature: Sign-In
     When User clicks on "register!" link in Sign-In Page.
     Then User should be redirected to register Page.
     
-    
-    
-#To execute this scenario uae SignInDataDriven Runner
-@SiginDPDataDriven
-  Scenario: Verify Login with valid and invalid credentials from Excel.
-    When User enters username,password and clicks on Login.
-    Then Verfiy expected message is displayed.
-    
-@SiginExcel-ScenarioDataDriven
-  Scenario Outline: Verify Login with valid and invalid credentials from Excel through Scenario Outline.
-    When User enters username,password and clicks on Login for "<TestCase>". 
-    Then Expected message should be displayed.
+   Scenario: Verify Login Credentials.
+    When User enters Login Credentials.
+    Then "You are logged in" message should be displayed on home Page.  
+
+  Scenario Outline: Verify Login with valid and invalid credentials.
+    When User enters username,password and clicks on Login to "<TestCase>". 
+    Then Expected message should be displayed for "<TestCase>".
     Examples:
 	
 |TestCase									  		    |
@@ -39,8 +34,10 @@ Feature: Sign-In
 |Verify invalid Login Credentials					    |
 |Verify invalid Login Credentials with special character|
 
-  Scenario Outline: Verify Login Credentials.
-    When User enters Login Credentials.
-    Then "You are logged in" message should be displayed on home Page.
+
     
-     
+
+@SiginDataProvider
+  Scenario: Verify Login with valid and invalid credentials from Excel.
+    When User enters username,password and clicks on Login.
+    Then Verfiy expected message is displayed.   

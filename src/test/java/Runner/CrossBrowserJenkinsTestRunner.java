@@ -1,4 +1,3 @@
-
 package Runner;
 
 import org.testng.annotations.BeforeClass;
@@ -9,14 +8,16 @@ import DriverFactory.DriverFactory;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features = {"src/test/resources/features"}, glue = {
-		"StepDefinitions", "hooks"}, plugin = {"pretty",
-				"html:target/cucumber-report.html", "json:target/cucumber.json",
-				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-				"rerun:target/rerun.txt"}, tags = "not @QQueueExcelDPDD and not @SiginDPDataDriven")
+@CucumberOptions(features = {
+		"src/test/resources/features/Graph.feature",}, glue = {
+				"StepDefinitions", "hooks"}, plugin = {"pretty",
+						"html:target/cucumber-report.html",
+						"json:target/cucumber.json",
+						"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+						"rerun:target/rerun.txt"}, tags = "not @SiginDataProvider")
 
-public class TestRunner extends AbstractTestNGCucumberTests {
+public class CrossBrowserJenkinsTestRunner extends AbstractTestNGCucumberTests {
 
 	@BeforeClass(alwaysRun = true)
 	@Parameters("browser")
