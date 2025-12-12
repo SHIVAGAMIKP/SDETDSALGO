@@ -14,7 +14,7 @@ import io.cucumber.testng.CucumberOptions;
 				"html:target/cucumber-report.html", "json:target/cucumber.json",
 				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-				"rerun:target/rerun.txt"}, tags = "not @QQueueExcelDPDD and not @SiginDPDataDriven")
+				"rerun:target/rerun.txt"}, tags = "not @SiginDataProvider")
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 

@@ -3,6 +3,8 @@ package Pages;
 import java.time.Duration;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,12 +14,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import DriverFactory.DriverFactory;
+
 import Utils.ConfigReader;
 
 public class HomePage {
 
 	private WebDriver driver;
-	WebDriverWait wait;
+	
+	private static final Logger logger = LogManager
+			.getLogger(HomePage.class);
 
 	@FindBy(xpath = "//button[@class='btn']")
 	private WebElement getStartedButton;
@@ -51,6 +56,8 @@ public class HomePage {
 	@FindBy(xpath = "//h4[contains(@class,'bg-secondary text-white')]")
 	WebElement intropageHeading;
 
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	
 	public HomePage() {
 		driver = DriverFactory.getDriver();
 		PageFactory.initElements(driver, this);
@@ -83,20 +90,20 @@ public class HomePage {
 	public String fetchregisterTitle() {
 
 		String registertitle = register.getAttribute("value");
-		System.out.print("Register button text= " + registertitle);
+		logger.info("Registeration page"+registertitle);
 		return registertitle;
 
 	}
 
 	public String fetchsigninpageTitle() {
 		String signintitle = signin.getAttribute("value");
-		System.out.print("Login button text: " + signintitle);
+		logger.info("SignIn page"+signintitle);
 		return signintitle;
 	}
 
 	public void selectTopicFromDropdown(String topicName) {
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	//	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		int retries = 3;
 		while (retries > 0) {
@@ -121,7 +128,7 @@ public class HomePage {
 				}
 
 			} catch (StaleElementReferenceException e) {
-				System.out.println("Stale detected → retrying...");
+				
 				// ReInitialize page factory to refresh all elements
 				//
 				PageFactory.initElements(driver, this);// recreates ALL @FindBy
@@ -135,9 +142,10 @@ public class HomePage {
 	}
 
 	public String fetchErrorMsg() {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
 		wait.until(ExpectedConditions.visibilityOf(errorMsg));
-		System.out.print("Error Message: " + errorMsg.getText());
+		logger.error("Error Message is displayed"+errorMsg);
+	
 		return errorMsg.getText();
 	}
 
@@ -149,28 +157,27 @@ public class HomePage {
 
 			String topicsTxt = getstartedTopic.get(i).getText();// getting exact
 																// location text
-			System.out.println("Index: " + i + " | Topic: " + topicsTxt);
+	
 			if (topicsTxt.equalsIgnoreCase(topic)) {
 				WebElement btn = getstartedBtn.get(i);
 
 				btn.click();
 
-				System.out.println("topics clicked are: " + topicsTxt);
+				logger.info("topics clicked are: " + topicsTxt);
+		
 				break;
 			}
 		}
 
 	}
 
-	public String fetchIntroductionPageTitle() {
-		System.out.print("Page Title: " + intropageHeading.getText());
+	public String fetchIntroductionPageTitle() 
+	{
+		logger.info("Page Title: " + intropageHeading.getText());
 		return intropageHeading.getText();
 	}
 
-	public void homeApplication() {
-		String homepageurl = ConfigReader.getProperty("homeurl");
-		driver.get(homepageurl);
-	}
+
 
 	public void gotosignin() {
 		signinLink.click();
