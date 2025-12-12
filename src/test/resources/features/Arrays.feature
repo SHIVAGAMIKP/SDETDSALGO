@@ -26,9 +26,8 @@ Feature: Arrays Introduction Page
       | Basic Operations in Lists |
       | Applications of Array     |
 
-  @DD
+  
   Scenario Outline: Execute valid Python code in editor
-
     Given user is on text editor page for corresponding "<subTopic>" page
     When user enters python code and clicks Run button
     Then output should be displayed in console
@@ -40,7 +39,7 @@ Feature: Arrays Introduction Page
       | Basic Operations in Lists |
       | Applications of Array     |
 
-  @DD
+  
   Scenario Outline: Execute invalid Python code in editor
     Given user is on text editor page for corresponding "<subTopic>" page
     When user enters python code and clicks Run button
@@ -85,7 +84,7 @@ Feature: Arrays Introduction Page
   Scenario Outline: Run invalid syntax in practice question editor
     Given user is on "<practiceQuestiontopic>" page with text editor
     When user enters python code and clicks Run button
-    Then user should see alertMessage displayed in popup window
+    Then error message should be displayed in popup window
     
     Examples:
       | practiceQuestiontopic                   | 

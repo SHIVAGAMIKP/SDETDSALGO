@@ -1,4 +1,4 @@
-Feature: Launching the application
+Feature: Home Module
 
   Scenario: Navigation from launch page to home page
     Given The user opens DSAlgo portal link
