@@ -18,21 +18,20 @@ Feature: Graph Module
       | Graph                 |
       | Graph Representations |
 
-@Graph50:50DD
-  Scenario Outline: : Verify TryHere Link and code execution for links on  Graph Page
-    Given User is in "<GraphPageLinks>" Page.
-    When  User clicks on TryHere link on  "<GraphPageLinks>" and clicks on run button to execute the "<Code>" entered in Editor space.
-    Then "<Output>" for the executed code should be displayed.
+
+   Scenario Outline: Verify TryHere Link for all the links on Graph Page.
+    Given User is in "<GraphPageLinks>" page of Graph module.
+    When User clicks on TryHere link in "<GraphPageLinks>" page of Graph module
+    Then Verfiy the Editor Page is displayed.
 
     Examples:
-      | GraphPageLinks        | Code                           | Output				   |
-      | Graph                 | print('Graph')                 | Graph                 |
-      | Graph Representations | print('Graph Representations') | Graph Representations |
-      
-@GraphSODD
-Scenario Outline: Verify TryHere Link and code execution for valid Graph code.
-    Given User is in "<GraphPageLinks>" Page.
-    When User clicks on TryHere link on "<GraphPageLinks>" and executes the code by clicking on run button.
+      | GraphPageLinks        | 
+      | Graph                 | 
+      | Graph Representations |    
+
+ Scenario Outline: Verify code execution for valid Graph code. 
+    Given User is in "<GraphPageLinks>" code execution Page.
+    When User enters the code in editor space and clicks on run button to execute the code.
     Then Verfiy the expected and actual ouput displayed.
 
     Examples:
@@ -40,10 +39,10 @@ Scenario Outline: Verify TryHere Link and code execution for valid Graph code.
       | Graph                 | 
       | Graph Representations | 
       
-@GraphSODD
-Scenario Outline: Verify TryHere Link and code execution for invalid Graph code.
-    Given User is in "<GraphPageLinks>" Page.
-   	When User clicks on TryHere link on "<GraphPageLinks>" and executes the code by clicking on run button.
+
+Scenario Outline: Verify code execution for invalid Graph code.
+    Given User is in "<GraphPageLinks>" code execution Page.
+    When User enters the code in editor space and clicks on run button to execute the code.
     Then Verfiy the expected and actual ouput displayed.
 
     Examples:

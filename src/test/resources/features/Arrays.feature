@@ -71,7 +71,7 @@ Feature: Arrays Introduction Page
       | Find Numbers with Even Number of Digits | QUESTION         |
       | Squares of a Sorted Array               | QUESTION         |
 
-  Scenario: Run valid Python code in practice question editor
+  Scenario Outline: Run valid Python code in practice question editor
     Given user is on "<practiceQuestiontopic>" page with text editor
     When user enters python code and clicks Run button
     Then output should be displayed in console
