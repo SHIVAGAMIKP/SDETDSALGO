@@ -6,7 +6,7 @@ import java.util.Properties;
 public class ConfigReader {
 	private static Properties prop;
 
-	public static String getProperty(String key) {
+	public static synchronized String getProperty(String key) {
 		try {
 			if (prop == null) {
 				prop = new Properties();

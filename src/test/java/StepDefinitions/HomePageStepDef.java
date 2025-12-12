@@ -4,9 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
-import Pages.SignInPage;
 //import Pages.LaunchPage;
 import Pages.HomePage;
+import Pages.SignInPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -20,7 +20,7 @@ public class HomePageStepDef {
 
 	@Given("The user opens DSAlgo portal link")
 	public void user_is_in_launch_page() {
-		hp = new HomePage();
+		hp = new HomePage(); // multiple place intialization.
 		hp.launchApplication();
 
 	}
@@ -39,7 +39,7 @@ public class HomePageStepDef {
 	@Given("User is on home page")
 	public void user_is_on_home_page() {
 
-		hp = new HomePage();
+		hp = new HomePage(); // multiple place intialization.
 		hp.homeApplication();
 
 	}

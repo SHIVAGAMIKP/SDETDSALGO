@@ -1,3 +1,4 @@
+
 package DriverFactory;
 
 import java.time.Duration;
@@ -27,13 +28,10 @@ public class DriverFactory {
 
 	public static void setupBrowser(String browser) {
 		plbrowser.set(browser);
-		System.out.println(browser);
 
 	}
 
 	public static String getBrowser() {
-
-		System.out.println("plbrosweris set to" + plbrowser.get());
 		return plbrowser.get();
 
 	}
@@ -44,7 +42,6 @@ public class DriverFactory {
 		if (browserName == null) {
 
 			browserName = ConfigReader.getProperty("browser");
-			System.out.println("browser name is " + browserName);
 		}
 
 		logger.info("You selected " + browserName + " to run these tests");

@@ -1,3 +1,4 @@
+
 package Runner;
 
 import org.testng.annotations.BeforeClass;
@@ -25,4 +26,5 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 			DriverFactory.setupBrowser(browser);
 		}
 	}
+
 }

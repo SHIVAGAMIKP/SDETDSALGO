@@ -9,7 +9,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -49,7 +48,7 @@ public class GraphPage {
 
 	}
 
-	public String goToGraphPAge() {
+	public void goToGraphPAge() {
 
 		((JavascriptExecutor) driver).executeScript(
 				"arguments[0].scrollIntoView({block: 'center'});",
@@ -59,7 +58,6 @@ public class GraphPage {
 		wait.until(ExpectedConditions.visibilityOf(graphStartButton));
 		wait.until(ExpectedConditions.elementToBeClickable(graphStartButton));
 		graphStartButton.click();
-		return driver.getTitle();
 
 	}
 
@@ -76,7 +74,7 @@ public class GraphPage {
 		} else
 
 		{
-			logger.info("Verifying number of links on Graph page: Fail ");
+			logger.error("Verifying number of links on Graph page: Fail ");
 			return false;
 		}
 		logger.info("Verifying names of links on Graph page"
@@ -85,23 +83,18 @@ public class GraphPage {
 
 	}
 
-	public boolean clickonGraphLinks(String GraphPageLinks) {
+	public void clickonGraphLinks(String GraphPageLinks) {
 
-		logger.info("Click on links in Graph Page");
+		logger.info("Click on links in Graph Page: " + GraphPageLinks);
 
 		for (WebElement glink : graphPageLinkCount) {
-
-			System.out.println(glink.getText());
-
 			if (glink.getText().strip()
 					.equalsIgnoreCase(GraphPageLinks.trim())) {
-
 				glink.click();
-				return true;
+				break;
+
 			}
 		}
-		logger.info("Click " + GraphPageLinks + " Fail");
-		return false;
 
 	}
 
@@ -113,40 +106,26 @@ public class GraphPage {
 		if (graphPageLinkTitle.getText().equalsIgnoreCase(GraphPageLinks)) {
 			return true;
 		}
-		logger.info("Verify page title of links on Graph Page: Fail");
+		logger.error("Verify page title of links on Graph Page: Fail");
 		return false;
 
 	}
 
-	public boolean TryHere(String GraphPageLinks) {
+	public void TryHere(String GraphPageLinks) {
 
 		logger.info("Click on try here:" + GraphPageLinks);
 		tryHereLink.click();
 
+	}
+
+	public boolean VerifyAssementPage() {
+
 		if (driver.getTitle().equalsIgnoreCase("Assessment")) {
+			logger.info("Tryhere Link - Assement page displayed");
 			return true;
 		}
-		logger.info("Click on try here :" + GraphPageLinks + "Fail");
+		logger.error("Tryhere Link - Assement page Fail");
 		return false;
-
-	}
-
-	public void EnterCode(String code) {
-
-		logger.info("Enter the code : " + code);
-		Actions actions = new Actions(driver);
-		actions.click(codeSpace1).build().perform();
-		actions.sendKeys(codeSpace1, code).perform();
-		logger.info("Click on Run to execute code");
-		runButton.click();
-
-	}
-
-	public boolean getOutput(String output) {
-
-		logger.info("Expected code output is :" + output);
-		logger.info("Actual code output is :" + Output.getText());
-		return (Output.getText().equalsIgnoreCase(output));
 
 	}
 

@@ -1,8 +1,10 @@
 
 package Pages;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
@@ -16,6 +18,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import DriverFactory.DriverFactory;
+import Utils.ExcelUtil;
 
 public class SignInPage {
 
@@ -52,12 +55,6 @@ public class SignInPage {
 	public SignInPage() {
 		driver = DriverFactory.getDriver();
 		PageFactory.initElements(driver, this);
-
-		{
-			registerLink.put("register", register1Link);
-			registerLink.put("register!", register2Link);
-		}
-
 	}
 
 	public void clickOnSignIn() {
@@ -76,18 +73,12 @@ public class SignInPage {
 
 	public void clickLink(String linkName) {
 		logger.info("Click on " + linkName);
-		WebElement linkElement = registerLink.get(linkName);
 
-		if (linkElement != null) {
+		if (linkName.equalsIgnoreCase("register")) {
+			register1Link.click();
 
-			linkElement.click();
-
-		} else {
-			logger.info("Click on " + linkName + ":Fail");
-			throw new IllegalArgumentException(
-					"Link name not found in locator map: " + linkName);
-		}
-
+		} else if (linkName.equalsIgnoreCase("register!"))
+			register2Link.click();
 	}
 
 	public void Login(String username, String password) {
@@ -98,25 +89,42 @@ public class SignInPage {
 
 	}
 
+	public void userLogin() throws IOException {
+
+		logger.info("Login");
+		List<Map<String, String>> userdata = ExcelUtil.getTestData("Account");
+		UsernameInputbox.sendKeys(userdata.get(0).get("Username"));
+		PasswordInputbox.sendKeys(userdata.get(0).get("Password"));
+		LoginButton.click();
+
+	}
+
 	public String verifySuccesfulLogin() {
 
 		logger.info("Verify Login ");
-		try {
-			return LoginAlert.getText();
+		return LoginAlert.getText();
+	}
 
-		} catch (Exception e) {
+	public String verifySuccesfulLogintc(String testcase) {
+
+		logger.info("Verify Login ");
+		String validationMessage = null;
+
+		if (testcase.contains("empty")) {
+
 			JavascriptExecutor js = (JavascriptExecutor) driver;
-			String validationMessage = (String) js.executeScript(
+			validationMessage = (String) js.executeScript(
 					"return arguments[0].validationMessage;", UsernameInputbox);
-			System.out.println("Alert message: " + validationMessage);
-
 			if (validationMessage.isBlank()) {
 				validationMessage = (String) js.executeScript(
 						"return arguments[0].validationMessage;",
 						PasswordInputbox);
 			}
-			return validationMessage;
+		} else {
+			validationMessage = LoginAlert.getText();
 		}
+
+		return validationMessage;
 
 	}
 

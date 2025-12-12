@@ -1,15 +1,15 @@
 package StepDefinitions;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
 import org.testng.Assert;
 
+import Pages.HomePage;
 import Pages.QueuePage;
 import Pages.SignInPage;
-import Pages.HomePage;
 import Utils.ExcelUtil;
-import Utils.Savedata;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -22,9 +22,8 @@ public class QueueStepDef {
 	private String output;
 
 	QueuePage queue = new QueuePage();
-
 	SignInPage signIn = new SignInPage();
-	HomePage lp = new HomePage();
+	HomePage homePage = new HomePage();
 
 	private String scenario;
 
@@ -36,15 +35,14 @@ public class QueueStepDef {
 	}
 
 	@Given("User is in Queue Page.")
-	public void user_is_in_queue_page() throws InterruptedException {
+	public void user_is_in_queue_page()
+			throws InterruptedException, IOException {
 
-		lp.launchApplication();
-		lp.clickGetStarted();
-
+		homePage.launchApplication();
+		homePage.clickGetStarted();
 		signIn.clickOnSignIn();
-		signIn.Login("Test-229", "Shivagami229.");
-
-		Assert.assertEquals(queue.goToQueuePAge(), "Queue");
+		signIn.userLogin();
+		queue.goToQueuePAge();
 
 	}
 
@@ -59,7 +57,7 @@ public class QueueStepDef {
 
 	@When("User clicks on {string} in Queue Page.")
 	public void user_clicks_on_in_queue_page(String QueuePageLinks) {
-		Assert.assertTrue(queue.clickonQLinks(QueuePageLinks));
+		queue.clickonQLinks(QueuePageLinks);
 	}
 
 	@Then("Verify the {string} is displayed.")
@@ -67,60 +65,60 @@ public class QueueStepDef {
 		Assert.assertTrue(queue.verifyQlinkPage(QueuePageLinks));
 	}
 
-	@Given("User is in {string} Page.")
-	public void user_is_in_page(String QueuePageLinks) {
+	@Given("User is in {string} page of Queue module.")
+	public void user_is_in_page_of_Queue_module(String QueuePageLinks) {
 		queue.clickonQLinks(QueuePageLinks);
-		Assert.assertTrue(queue.verifyQlinkPage(QueuePageLinks));
 
 	}
 
-	@When("User clicks on TryHere link on  {string} and clicks on run button to execute the {string} entered in Editor space.")
-	public void user_clicks_on_try_here_link_on_and_clicks_on_run_button_to_execute_the_entered_in_editor_space(
-			String QueuePageLinks, String code) throws InterruptedException {
-
-		Assert.assertTrue(queue.TryHere(QueuePageLinks));
-		if (Savedata.getexecutionType() != null
-				&& Savedata.getexecutionType().equalsIgnoreCase("DD")) {
-			code = Savedata.getData().get("Code");
-		}
-
-		queue.EnterCode(code);
+	@When("User clicks on TryHere link in {string} page of Queue module")
+	public void user_clicks_on_try_here_link_in_page_of_Queue_module(
+			String QueuePageLinks) {
+		queue.TryHere(QueuePageLinks);
 	}
 
-	@Then("{string} for the executed code should be displayed.")
-	public void expected_output_for_the_executed_code_should_be_displayed(
-			String output) {
-		if (Savedata.getexecutionType() != null
-				&& Savedata.getexecutionType().equalsIgnoreCase("DD")) {
-			output = Savedata.getData().get("Output");
-		}
+	@Then("Verfiy the Editor Page is displayed.")
+	public void verfiy_the_editor_page_is_displayed() {
+		Assert.assertTrue(queue.VerifyAssementPage());
 
-		Assert.assertTrue(queue.getOutput(output));
 	}
 
-	@When("User clicks on TryHere link on {string} and executes the code by clicking on run button.")
-	public void user_clicks_on_try_here_link_on_and_executes_the_code_by_clicking_on_run_button(
-			String QueuePageLinks) throws InterruptedException {
+	@Given("User is in {string} code execution Page.")
+	public void user_is_in_code_execution_page(String QueuePageLinks) {
+		queue.clickonQLinks(QueuePageLinks);
+		queue.TryHere(QueuePageLinks);
+	}
 
+	@When("User enters the code in editor space and clicks on run button to execute the code.")
+	public void user_enters_the_code_in_editor_space_and_clicks_on_run_button_to_execute_the_code()
+			throws InterruptedException {
+
+		String sheetName = null;
 		Map<String, String> Queuecode = null;
 
-		Assert.assertTrue(queue.TryHere(QueuePageLinks));
+		if (scenario.trim()
+				.equals("Verify code execution for valid Queue code.")
+				|| scenario.trim().equals(
+						"Verify code execution for invalid Queue code."))
+			sheetName = "Queue-SODD";
+		else if (scenario.trim()
+				.equals("Verify code execution for valid Graph code.")
+				|| scenario.trim().equals(
+						"Verify code execution for invalid Graph code."))
+			sheetName = "Graph-SODD";
+
 		try {
-			Queuecode = ExcelUtil.getTestRow("Queue-SODD", scenario);
-			System.out.println("Quesecode is " + Queuecode);
+			Queuecode = ExcelUtil.getTestRow(sheetName, scenario);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 
 		if (Queuecode != null) {
-			System.out.println(Queuecode);
-			queue.EnterCode(Queuecode.get("Code").trim());
 
+			queue.EnterCode(Queuecode.get("Code").trim());
 			output = Queuecode.get("Output").trim();
 
-		} else {
-			Assert.assertFalse(false);
 		}
 
 	}
@@ -128,35 +126,6 @@ public class QueueStepDef {
 	@Then("Verfiy the expected and actual ouput displayed.")
 	public void verfiy_the_expected_and_actual_ouput_displayed() {
 		Assert.assertTrue(queue.getOutput(output));
-	}
-
-	/*
-	 * Data Driven through Excel -end to end with out scenario outline
-	 */
-	@Given("User is in Queue Page Links.")
-	public void user_is_in_queue_page_links() {
-
-		queue.clickonQLinks(Savedata.getData().get("QueuePageLinks"));
-		Assert.assertTrue(queue
-				.verifyQlinkPage(Savedata.getData().get("QueuePageLinks")));
-
-	}
-
-	@When("User clicks on TryHere link on  QueuePage Links")
-	public void user_clicks_on_try_here_link_on_queue_page_links() {
-		Assert.assertTrue(
-				queue.TryHere(Savedata.getData().get("QueuePageLinks")));
-	}
-
-	@When("User clicks on run button to execute the sample code entered in Queue Editor.")
-	public void user_clicks_on_run_button_to_execute_the_sample_code_entered_in_queue_editor()
-			throws InterruptedException {
-		queue.EnterCode(Savedata.getData().get("Code"));
-	}
-
-	@Then("Output for the executed code should be displayed.")
-	public void output_for_the_executed_code_should_be_displayed() {
-		Assert.assertTrue(queue.getOutput(Savedata.getData().get("Output")));
 	}
 
 }

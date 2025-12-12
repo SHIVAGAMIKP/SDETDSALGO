@@ -24,8 +24,6 @@ public class ExcelUtil {
 		workbook = new XSSFWorkbook(filelocation);
 		// sheet = workbook.getSheet("Queue");
 		sheet = workbook.getSheet(testsheet);
-
-		System.out.println("I am inside Excel class");
 		int rows = sheet.getPhysicalNumberOfRows();
 		int cols = sheet.getRow(0).getLastCellNum();
 
@@ -51,14 +49,13 @@ public class ExcelUtil {
 		Object[][] finalTestData = new Object[data.size()][1];
 		for (int i = 0; i < data.size(); i++) {
 			finalTestData[i][0] = data.get(i);
-			System.out.println("final test data is " + finalTestData[i][0]);
 		}
 
 		return finalTestData;
 	}
 
-	public static List<Map<String, String>> getTestData(String sheetName)
-			throws IOException {
+	public static synchronized List<Map<String, String>> getTestData(
+			String sheetName) throws IOException {
 		List<Map<String, String>> testData = new ArrayList<>();
 
 		workbook = new XSSFWorkbook(filepath);
@@ -84,8 +81,7 @@ public class ExcelUtil {
 			}
 			testData.add(map);
 		}
-		// lock.unlock();
-		System.out.println(testData.getLast());
+
 		workbook.close();
 		return testData;
 

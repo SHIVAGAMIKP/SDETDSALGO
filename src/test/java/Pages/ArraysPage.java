@@ -22,16 +22,13 @@ public class ArraysPage {
 	WebElement arraysGetStartedBtn;
 	@FindBy(xpath = "//h4[contains(@class,'bg-secondary text-white')]")
 	WebElement fetchpageTitle;
-
 	@FindBy(xpath = "//a[contains(@class,'list-group-item')]")
 	List<WebElement> arraysubpageLinks;
 	@FindBy(xpath = "//div[@class='col-sm']/strong//p[contains(@class,'bg-secondary text-white')]")
 	WebElement arraysubpageTitle;
-
 	@FindBy(xpath = "//a[contains(@class,'btn btn-info')]")
 	WebElement tryhereBtn;
 	@FindBy(xpath = "//div[contains(@class,'CodeMirror cm-s-default')]")
-
 	WebElement texteditor;
 	@FindBy(xpath = "//button[@type='button']")
 	WebElement runBtn;
@@ -42,9 +39,7 @@ public class ArraysPage {
 	WebElement practiceQueLink;
 	@FindBy(xpath = "//a[contains(@class,'list-group-item')]")
 	List<WebElement> practiceSubTopics;
-
 	@FindBy(xpath = "//div[@class='question']/h2")
-
 	WebElement practicesubTopicsTitle;
 
 	public ArraysPage() {

@@ -6,9 +6,8 @@ import java.util.Map;
 
 import org.testng.Assert;
 
-import DriverFactory.DriverFactory;
-import Pages.SignInPage;
 import Pages.HomePage;
+import Pages.SignInPage;
 import Utils.ExcelUtil;
 import Utils.Savedata;
 import io.cucumber.java.en.Given;
@@ -17,17 +16,15 @@ import io.cucumber.java.en.When;
 
 public class SignInStepDef {
 
-	DriverFactory df = new DriverFactory();
-
 	SignInPage signIn = new SignInPage();
-	HomePage lp = new HomePage();
+	HomePage homePage = new HomePage();
 	private String expectedMessage;
 
 	@Given("User is in Sign-Page.")
 	public void user_is_in_sign_page() {
 
-		lp.launchApplication();
-		lp.clickGetStarted();
+		homePage.launchApplication();
+		homePage.clickGetStarted();
 		signIn.clickOnSignIn();
 
 	}
@@ -52,12 +49,49 @@ public class SignInStepDef {
 	}
 
 	@Then("User should be redirected to register Page.")
-	public void user_should_be_redirected_to_register_page()
-			throws IOException {
+	public void user_should_be_redirected_to_register_page() {
 		Assert.assertEquals(signIn.getPageTitle(), "Registration");
 
 	}
 
+	@When("User enters Login Credentials.")
+	public void user_enters_and_clicks_on_login() throws IOException {
+		signIn.userLogin();
+	}
+
+	@Then("{string} message should be displayed on home Page.")
+	public void message_should_be_displayed_on_home_page(
+			String expectedMessage) {
+		String actualMessage = signIn.verifySuccesfulLogin();
+		Assert.assertEquals(actualMessage, expectedMessage);
+
+	}
+
+	@When("User enters username,password and clicks on Login to {string}.")
+	public void user_enters_username_password_and_clicks_on_login_to(
+			String testcase) throws IOException {
+
+		List<Map<String, String>> Logindata = ExcelUtil.getTestData("Sign-IN");
+		Map<String, String> getRow = Logindata.stream().filter(
+				row -> row.get("TestCase").trim().equals(testcase.trim()))
+				.findFirst().orElse(null);
+
+		if (getRow != null) {
+
+			String username = getRow.get("Username").trim();
+			String password = getRow.get("Password").trim();
+			expectedMessage = getRow.get("Expected Result").trim();
+			signIn.Login(username, password);
+		}
+	}
+
+	@Then("Expected message should be displayed for {string}.")
+	public void expected_message_should_be_displayed_for(String testCase) {
+		Assert.assertEquals(signIn.verifySuccesfulLogintc(testCase),
+				expectedMessage);
+	}
+
+	// Data Provider Data Driven Step def //
 	@When("User enters username,password and clicks on Login.")
 	public void user_enters_username_password_and_clicks_on_login()
 			throws InterruptedException, IOException {
@@ -70,55 +104,13 @@ public class SignInStepDef {
 
 	}
 
-	@When("User enters Login Credentials.")
-	public void user_enters_and_clicks_on_login() {
-		signIn.Login("Test-229", "Shivagami229.");
-	}
-
-	@Then("{string} message should be displayed on home Page.")
-	public void message_should_be_displayed_on_home_page(
-			String expectedMessage) {
-		String actualMessage = signIn.verifySuccesfulLogin();
-		// Screenshot.fullPageScreenshot("SignIn");
-		Assert.assertEquals(actualMessage, expectedMessage);
-
-	}
-
 	@Then("Verfiy expected message is displayed.")
 	public void Verfiy_expected_message_is_displayed() throws IOException {
 		Map<String, String> Logindata = Savedata.getData();
-		String actualMessage = signIn.verifySuccesfulLogin();
+		String actualMessage = signIn
+				.verifySuccesfulLogintc(Logindata.get("SignInScenario"));
 		Assert.assertEquals(actualMessage,
 				Logindata.get("Expected Result").trim());
 	}
-
-	@When("User enters username,password and clicks on Login for {string}.")
-	public void user_enters_username_password_and_clicks_on_login_for(
-			String testcase) throws IOException {
-
-		List<Map<String, String>> Logindata = ExcelUtil.getTestData("Sign-IN");
-		Map<String, String> getRow = Logindata.stream().filter(
-				row -> row.get("TestCase").trim().equals(testcase.trim()))
-				.findFirst().orElse(null);
-
-		if (getRow != null) {
-
-			String username = getRow.get("Username").trim();
-			System.out.println(username);
-			String password = getRow.get("Password").trim();
-			System.out.println(password);
-			expectedMessage = getRow.get("Expected Result").trim();
-			System.out.println(expectedMessage);
-			signIn.Login(username, password);
-		} else {
-			Assert.assertFalse(false);
-		}
-
-	}
-
-	@Then("Expected message should be displayed.")
-	public void expected_message_should_be_displayed() {
-		Assert.assertEquals(signIn.verifySuccesfulLogin(), expectedMessage);
-	}
-
 }
+// Data Provider Data Driven Step def //
