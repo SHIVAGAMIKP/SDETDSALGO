@@ -20,12 +20,10 @@ import DriverFactory.DriverFactory;
 
 public class ArraysPage {
 
-	
 	private WebDriver driver;
-	
-	private static final Logger logger = LogManager
-			.getLogger(ArraysPage.class);
-	@FindBy(xpath = "//div[2][@class='col']/div[1]/div/a")
+
+	private static final Logger logger = LogManager.getLogger(ArraysPage.class);
+	@FindBy(xpath = "//a[@href='array']")
 	WebElement arraysGetStartedBtn;
 	@FindBy(xpath = "//h4[contains(@class,'bg-secondary text-white')]")
 	WebElement fetchpageTitle;
@@ -52,7 +50,7 @@ public class ArraysPage {
 
 	@FindBy(xpath = "//div[@class='question']/h2")
 	WebElement practicesubTopicsTitle;
-	
+
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
 	public ArraysPage() {
@@ -64,30 +62,35 @@ public class ArraysPage {
 		arraysGetStartedBtn.click();
 	}
 	public String fetchArrayspageTitle() {
-		logger.info("ArraysPage Title"+fetchpageTitle.getText());
-	
+		logger.info("ArraysPage Title" + fetchpageTitle.getText());
+
 		return fetchpageTitle.getText();
 	}
 	public void topicsCovered(String topiccovered) {
-		for (int i = 0; i < arraysubpageLinks.size(); i++) { // looping since it has multiple getstarted button
-																  
+		for (int i = 0; i < arraysubpageLinks.size(); i++) { // looping since it
+																// has multiple
+																// getstarted
+																// button
 
-			String topicsTxt = arraysubpageLinks.get(i).getText();// getting exact location text
-																	
+			String topicsTxt = arraysubpageLinks.get(i).getText();// getting
+																	// exact
+																	// location
+																	// text
+
 			if (topicsTxt.equalsIgnoreCase(topiccovered)) {
 				WebElement topiclink = arraysubpageLinks.get(i);
 
 				topiclink.click();
 				logger.info("topics clicked are: " + topicsTxt);
-		
+
 				break;
 			}
 		}
 	}
 	public String fetchtitlepage() {
 		String pagetitle = arraysubpageTitle.getText();
-		logger.info("Arrays Subpage Title: "+arraysubpageTitle.getText());
-		
+		logger.info("Arrays Subpage Title: " + arraysubpageTitle.getText());
+
 		return pagetitle;
 	}
 	public void tryhere() {
@@ -118,7 +121,7 @@ public class ArraysPage {
 			Alert alert = driver.switchTo().alert();
 			String alertMsg = alert.getText();
 			alert.accept();
-			logger.info("Error Message from alert "+alertMsg);
+			logger.info("Error Message from alert " + alertMsg);
 			return (alertMsg);
 		} catch (NoAlertPresentException e) {
 			return consoleOutput.getText().trim();
@@ -131,37 +134,34 @@ public class ArraysPage {
 	}
 
 	public String getPageTitle() {
-		logger.info("Practice page title "+driver.getTitle());
-	
+		logger.info("Practice page title " + driver.getTitle());
+
 		return driver.getTitle();
 	}
 
 	public void practicesubTopiclink(String practicequeList) {
-		
-		
+
 		int attempts = 0;
 		while (attempts < 3) {
-		    try {
-		        for (WebElement topic : practiceSubTopics) {
-		            if (topic.getText().trim().equalsIgnoreCase(practicequeList)) {
-		                wait.until(ExpectedConditions.elementToBeClickable(topic)).click();
-		                return;
-		            }
-		        }
-		    } catch (StaleElementReferenceException e) {
-		        PageFactory.initElements(driver, this); // refresh elements
-		        attempts++;
-		    }
+			try {
+				for (WebElement topic : practiceSubTopics) {
+					if (topic.getText().trim()
+							.equalsIgnoreCase(practicequeList)) {
+						wait.until(
+								ExpectedConditions.elementToBeClickable(topic))
+								.click();
+						return;
+					}
+				}
+			} catch (StaleElementReferenceException e) {
+				PageFactory.initElements(driver, this); // refresh elements
+				attempts++;
+			}
 		}
 
-		
-	
-		}
-
-	
+	}
 
 	public String subtopicTitle() {
-	
 
 		WebElement titleElement = wait
 				.until(ExpectedConditions.visibilityOf(practicesubTopicsTitle));
