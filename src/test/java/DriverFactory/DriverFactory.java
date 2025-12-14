@@ -11,7 +11,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import Utils.ConfigReader;
-import io.cucumber.java.After;
 
 public class DriverFactory {
 	private static final Logger logger = LogManager
@@ -63,13 +62,6 @@ public class DriverFactory {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().window().maximize();
-
-	}
-
-	@After(order = 0)
-	public void close() {
-
-		tldriver.remove();
 
 	}
 
