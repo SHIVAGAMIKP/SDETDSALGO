@@ -19,7 +19,7 @@ public class Hooks {
 	}
 
 	@After(order = 1)
-	public void quitBrowser(Scenario scenario) {
+	public void quitBrowser() {
 
 		if (DriverFactory.getDriver() != null) {
 			DriverFactory.getDriver().quit();
