@@ -93,7 +93,6 @@ public class ExcelUtil {
 		Map<String, String> getRow = null;
 		try {
 			List<Map<String, String>> code = ExcelUtil.getTestData(sheetName);
-			System.out.println("code is " + code.get(0));
 
 			getRow = code.stream().filter(
 					row -> scenarioName.contains(row.get("ScenarioName")))
