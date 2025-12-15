@@ -95,7 +95,6 @@ public class ArraysStepDefinition {
 	public void user_enters_python_code_and_clicks_run_button() {
 
 		Map<String, String> Arraycode = null;
-		System.out.println("Inside TextEditor");
 		try {
 			Arraycode = ExcelUtil.getTestRow("Arrays_sheet", scenario);
 
@@ -105,9 +104,7 @@ public class ArraysStepDefinition {
 		}
 
 		if (Arraycode != null) {
-			System.out.println(Arraycode.get("Code"));
 			arrayspage.runPythonCode(Arraycode.get("Code"));
-
 			output = Arraycode.get("Output").trim();
 
 		} else {
