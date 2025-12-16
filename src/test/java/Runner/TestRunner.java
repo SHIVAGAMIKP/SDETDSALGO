@@ -26,5 +26,9 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 			DriverFactory.setupBrowser(browser);
 		}
 	}
-
+	// @Override
+	// @DataProvider(parallel = true)
+	// public Object[][] scenarios() {
+	// return super.scenarios();
+	// }
 }
